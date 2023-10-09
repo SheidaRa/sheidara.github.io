@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.8ad6ab70.css",
+    "main.js": "/My-Portfolio/static/js/main.f5094756.js",
+    "static/js/787.7efd31bd.chunk.js": "/My-Portfolio/static/js/787.7efd31bd.chunk.js",
+    "static/media/sheida.png": "/My-Portfolio/static/media/sheida.d20062bfc730ca3f69b3.png",
+    "static/media/logo.svg": "/My-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/My-Portfolio/index.html",
+    "main.8ad6ab70.css.map": "/My-Portfolio/static/css/main.8ad6ab70.css.map",
+    "main.f5094756.js.map": "/My-Portfolio/static/js/main.f5094756.js.map",
+    "787.7efd31bd.chunk.js.map": "/My-Portfolio/static/js/787.7efd31bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ad6ab70.css",
+    "static/js/main.f5094756.js"
+  ]
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EducationCard = ({ school, place, image }) => {
+const EducationCard = ({ school, place, degree, image }) => {
     return (
         <div className='education-card'>
             <div className='education-img'>
@@ -8,6 +8,7 @@ const EducationCard = ({ school, place, image }) => {
             </div>
             <h3>{school}</h3>
             <h4>{place}</h4>
+            <h4>{degree}</h4>
         </div>
     )
 }

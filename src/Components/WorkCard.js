@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WorkCard = ({ experience, place, image = 'images/placeholder.jpg' }) => {
+const WorkCard = ({ experience, place, date,  image = 'images/placeholder.jpg' }) => {
     return (
         <div className='work-card'>
             <div className='work-img'>
@@ -8,6 +8,8 @@ const WorkCard = ({ experience, place, image = 'images/placeholder.jpg' }) => {
             </div>
             <h3>{experience}</h3>
             <h4>{place}</h4>
+            <h4>{date}</h4>
+
         </div>
     )
 }

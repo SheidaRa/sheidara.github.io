@@ -339,28 +339,51 @@ function App() {
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-              <WorkCard experience={'Google Student Developer Club Leader'} place={'Macalester College, MN'} image={'images/schools/Mac.jpg'} />
+            <WorkCard experience={'Software Developer, UX Designer and Marketing Intern'} place={'Easy EMDR. MN'} date={'June 2023 – August 2023'} image={'/images/places/easyemdr.png'} />
 
             </div>
 
             <div className='col-lg-4 col-10 offset-1'>
 
-              <WorkCard experience={'Digital Resources Center Lab Assistant'} place={'Macalester College, MN'} image={'images/schools/Mac.jpg'} />
+            <WorkCard experience={'Software Developer and UX Designer Intern'} place={'GogyUp Inc. MN '} date={' June 2022 - August 2022'} image={'images/places/gogyup.png'} />
 
             </div>
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-              <WorkCard experience={'Software Developer and UX Designer'} place={'GogyUp Inc. MN'} />
+            <WorkCard experience={'Teaching Assistant for Algorithm Design & Analysis & Python'} place={'Macalester College, MN'} date={' January 2022 – May 2023'} image={'images/schools/Mac.jpg'} />
 
             </div>
 
             <div className='col-lg-4 col-10 offset-1'>
 
-              <WorkCard experience={'Social Media Manager'} place={'United World College Iran National Committee, Remote'} />
+            <WorkCard experience={'Digital Resources Center Lab Assistant'} place={'Macalester College, MN'} date={' June 2022 - August 2022'} image={'images/places/drc.jpg'} />
 
             </div>
 
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+
+            <WorkCard experience={'Google Women Techmakers Ambassador & Student Developer Club Leader'} place={'Macalester College, MN'} date={' July 2022 – Present'} image={'images/places/google.png'}/>
+
+            </div>
+
+            <div className='col-lg-4 col-10 offset-1'>
+
+            <WorkCard experience={'Social Media Manager and Committee Member'} place={'United World College Iran National Committee, Remote'} date={' December 2020 – Present'} image={'images/places/uwc.png'}/>
+
+            </div>
+
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+
+            <WorkCard experience={'Resident Assistant'} place={'Macalester College, MN'} date={' January 2022 – May 23'} image={'images/places/dorm.jpg'}/>
+
+            </div>
+
+            <div className='col-lg-4 col-10 offset-1'>
+
+            <WorkCard experience={'Student Government Diversity and Inclusion Officer'} place={'Macalester College, MN'} date={' November 2021 - May 2022'} image={'images/places/mcsg.png'}/>
+
+            </div>
           </div>
 
         </section>
@@ -375,40 +398,51 @@ function App() {
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-              <PortfolioCard project={'Tetris Puzzle App'} tools={['Swift', 'XCode', 'SpriteKit']} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
+            <PortfolioCard project={'Sign Language Recognizer'} tools={['Python', 'Media Pipe']} link={'https://github.com/SheidaRa'} image={'images/projects/hand.png'} />
 
             </div>
 
             <div className='col-lg-4 col-10 offset-1'>
 
-              <PortfolioCard project={'Fantasy Safe'} tools={['Java', 'AndroidStudio']} link={'https://github.com/SheidaRa/Fantasy-Safe'} image={'images/projects/fantasySafe.jpg'} />
+            <PortfolioCard project={'Tetris Puzzle App'} tools={['Swift', 'XCode', 'SpriteKit']} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
 
             </div>
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-              <PortfolioCard project={'Smart Mailbox'} tools={['Python', 'RaspberryPi', 'IoT']} link={'https://github.com/SheidaRa/Smart-Mail-Box'} image={'images/projects/mailBox.jpg'} />
+            <PortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://github.com/SheidaRa/'} image={'images/projects/chroma.png'} />
 
             </div>
 
             <div className='col-lg-4 col-10 offset-1'>
 
-              <PortfolioCard project={'My Planner Application'} tools={['Java']} link={'https://github.com/SheidaRa/MyPlanner'} image={'images/projects/planner.png'} />
+            <PortfolioCard project={'Online Portfolio'} tools={['React', 'NextJS', 'JavaScript']} link={'https://github.com/SheidaRa/SheidaRa.github.io'} image={'images/projects/portfolio.png'} />
 
             </div>
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-              <PortfolioCard project={'Sudoku Solver'} tools={['Python', 'Backtracking']} link={'https://github.com/SheidaRa/SudokuPuzzle'} image={'images/projects/sudoku.png'} />
+            <PortfolioCard project={'Sudoku Solver'} tools={['Python', 'Backtracking']} link={'https://github.com/SheidaRa/SudokuPuzzle'} image={'images/projects/sudoku.png'} />
 
             </div>
 
             <div className='col-lg-4 col-10 offset-1'>
 
-              <PortfolioCard project={'Online Portfolio'} tools={['React', 'NextJS', 'JavaScript']} link={'https://github.com/SheidaRa/SheidaRa.github.io'} image={'images/projects/portfolio.png'} />
+            <PortfolioCard project={'Fantasy Safe'} tools={['Java', 'AndroidStudio']} link={'https://github.com/SheidaRa/Fantasy-Safe'} image={'images/projects/fantasySafe.jpg'} />
 
             </div>
 
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+
+            <PortfolioCard project={'Smart Mailbox'} tools={['Python', 'RaspberryPi', 'IoT']} link={'https://github.com/SheidaRa/Smart-Mail-Box'} image={'images/projects/mailBox.jpg'} />
+
+            </div>
+
+            <div className='col-lg-4 col-10 offset-1'>
+
+            <PortfolioCard project={'My Planner Application'} tools={['Java']} link={'https://github.com/SheidaRa/MyPlanner'} image={'images/projects/planner.png'} />
+
+            </div>
           </div>
 
         </section>
@@ -422,30 +456,29 @@ function App() {
           <div className='row'>
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-              <PortfolioCard project={'UX Project 1'} tools={['Ur tool 1', 'Ur tool 2']} link={'#'} image={'images/placeholder.jpg'} />
+            <PortfolioCard project={'TouchChat Application Redesign'} tools={['Figma']} link={'#'} image={'images/projects/hci.png'} />
 
             </div>
 
             <div className='col-lg-4 col-10 offset-1'>
 
-              <PortfolioCard project={'UX Project 2'} tools={['Ur tool 1', 'Ur tool 2']} link={'#'} image={'images/placeholder.jpg'} />
+            <PortfolioCard project={'Online Portfolio'} tools={['React', 'NextJS', 'JavaScript']} link={'https://github.com/SheidaRa/SheidaRa.github.io'} image={'images/projects/portfolio.png'} />
 
             </div>
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-              <PortfolioCard project={'UX Project 3'} tools={['Ur tool 1', 'Ur tool 2']} link={'#'} image={'images/placeholder.jpg'} />
+            <PortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://github.com/SheidaRa/'} image={'images/projects/chroma.png'} />
 
             </div>
 
             <div className='col-lg-4 col-10 offset-1'>
 
-              <PortfolioCard project={'UX Project 4'} tools={['Ur tool 1', 'Ur tool 2']} link={'#'} image={'images/placeholder.jpg'} />
+            <PortfolioCard project={'Tetris Puzzle App'} tools={['Swift', 'XCode', 'SpriteKit']} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
 
             </div>
 
           </div>
-
 
         </section>
 

@@ -249,7 +249,6 @@ h1 {
 @media (max-width: 768px) {
   .navbar {
     display: none;
-    /* Cache la classe sur les appareils mobiles dont la largeur d'écran est inférieure ou égale à 768px */
   }
 
   .desktop {
@@ -273,7 +272,6 @@ h1 {
 @media (min-width: 769px) {
   .navbar {
     display: block;
-    /* Cache la classe sur les appareils mobiles dont la largeur d'écran est inférieure ou égale à 768px */
   }
 
   .desktop {

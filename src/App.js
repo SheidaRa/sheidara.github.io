@@ -20,7 +20,6 @@ function App() {
   };
 
   return (
-    // container is a bootstrap class, bootstrap basicaly makes responsiveness easy to implement dividing the webpage in 12 colummns u can play with depending on screen size
     <div>
 
       {/* DESKTOP PART */}
@@ -32,7 +31,6 @@ function App() {
             <div id="scrollspy1" className="sticky-top col-lg-8 offset-lg-2">
               <ul className="nav menu-sidebar ps-2">
                 <li className="nav-item">
-                  {/* This means when u clink a link in the navbar, u change the section and u show the link as active to see which section is activated*/}
                   <a className={`nav-link ${activeSlide === 0 ? 'active' : ''}`} onClick={() => handleSlideClick(0)}>About</a>
                 </li>
                 <li className="nav-item">
@@ -273,15 +271,12 @@ function App() {
 
       </div>
 
-      {/* MOBILE PART - ONLY DISPLAYS ON PHONE, NOT A SLIDER, USES SCROLL */}
       <div className='container mobile'>
 
         <section className='section-center'>
 
-          {/* We use row class to use multiple columns side to side */}
           <div className='row'>
 
-            {/* that's the 1st column, the one with the text */}
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
               <div className='presentation'>
                 <div className='hello'>Hello, I am</div>
@@ -312,7 +307,6 @@ function App() {
           </div>
           {/* Education title */}
 
-          {/* Basically this means display 2 education cards max on the same row  */}
           <div className='row'>
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>

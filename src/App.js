@@ -244,7 +244,7 @@ function App() {
                 </div>
 
                 <div className='col-lg-4'>
-                <PortfolioCard project={'Online Portfolio'} tools={['React', 'NextJS', 'JavaScript']} link={'https://github.com/SheidaRa/SheidaRa.github.io'} image={'images/projects/portfolio.png'} />
+                <PortfolioCard project={'Online Portfolio'} tools={['Figma',]} link={'https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1'} image={'images/projects/portfolio.png'} />
 
 
                 </div>
@@ -257,7 +257,7 @@ function App() {
 
                 <div className='col-lg-4'>
 
-                <PortfolioCard project={'Tetris Puzzle App'} tools={['Swift', 'XCode', 'SpriteKit']} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
+                <PortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva', ]} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
 
                 </div>
 

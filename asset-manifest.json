@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a356d82d.css",
-    "main.js": "/static/js/main.f1703064.js",
+    "main.js": "/static/js/main.bfbb1824.js",
     "static/js/787.7efd31bd.chunk.js": "/static/js/787.7efd31bd.chunk.js",
     "static/media/sheida.png": "/static/media/sheida.d20062bfc730ca3f69b3.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.a356d82d.css.map": "/static/css/main.a356d82d.css.map",
-    "main.f1703064.js.map": "/static/js/main.f1703064.js.map",
+    "main.bfbb1824.js.map": "/static/js/main.bfbb1824.js.map",
     "787.7efd31bd.chunk.js.map": "/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a356d82d.css",
-    "static/js/main.f1703064.js"
+    "static/js/main.bfbb1824.js"
   ]
 }

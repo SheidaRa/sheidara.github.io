@@ -245,7 +245,7 @@ function App() {
                 </div>
 
                 <div className='col-lg-4'>
-                <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/projects/gogyup.png'} />
+                <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
 
 
                 </div>
@@ -468,7 +468,7 @@ function App() {
             </div>
             <div className='col-lg-4 col-10 offset-1'>
 
-            <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/projects/gogyup.png'} />
+            <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
 
             </div>
 

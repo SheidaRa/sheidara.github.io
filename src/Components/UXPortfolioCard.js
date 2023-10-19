@@ -21,7 +21,7 @@ const UXPortfolioCard = ({ project, tools, link, image = 'images/placeholder.jpg
                         )}
                     </div>
                     <a className='button' href={link} target='blank'>
-                        <span> View design or code  </span><FontAwesomeIcon icon={''} />
+                        <span> View design File </span><FontAwesomeIcon icon={''} />
                     </a>
                 </div>
             </div>

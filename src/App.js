@@ -258,7 +258,7 @@ function App() {
 
                 <div className='col-lg-4'>
 
-                <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva' ]} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
+                <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva' ]} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
 
                 </div>
 
@@ -475,7 +475,7 @@ function App() {
 
             <div className='col-lg-4 col-10 offset-1'>
 
-            <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva']} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
+            <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva']} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
 
             </div>
 

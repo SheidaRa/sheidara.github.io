@@ -239,34 +239,43 @@ function App() {
 
               <div className='row'>
                 <div className='col-lg-4 offset-lg-2'>
-                <UXPortfolioCard project={'TouchChat Application Redesign'} tools={['Figma']} link={'https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01'} image={'images/projects/hci.png'} />
+                <UXPortfolioCard project={'Rate This Rental'} tools={['Figma']} link={'https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1'} image={'images/projects/RTR.png'} />
+
 
 
                 </div>
 
                 <div className='col-lg-4'>
-                <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
+                  <UXPortfolioCard project={'TouchChat Application Redesign'} tools={['Figma']} link={'https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01'} image={'images/projects/hci.png'} />
+
 
 
                 </div>
 
                 <div className='col-lg-4 offset-lg-2'>
-                <UXPortfolioCard project={'Online Portfolio'} tools={['Figma']} link={'https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1'} image={'images/projects/portfolio.png'} />
+                            <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva' ]} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
 
 
                 </div>
 
                 <div className='col-lg-4'>
+                              <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
+
+
+
+                </div>
+
+                <div className='col-lg-4 offset-lg-2'>
                 <UXPortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810'} image={'images/projects/chroma.png'} />
 
 
                 </div>
+               <div className='col-lg-4'>
 
-                <div className='col-lg-4 offset-lg-2'>
 
-                <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva' ]} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
-
+                  <UXPortfolioCard project={'Online Portfolio'} tools={['Figma']} link={'https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1'} image={'images/projects/portfolio.png'} />
                 </div>
+
 
               </div>
 
@@ -463,33 +472,40 @@ function App() {
           <div className='row'>
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
-            <UXPortfolioCard project={'TouchChat Application Redesign'} tools={['Figma']} link={'https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01'} image={'images/projects/hci.png'} />
+            <UXPortfolioCard project={'Rate This Rental'} tools={['Figma']} link={'https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1'} image={'images/projects/RTR.png'} />
 
             </div>
             <div className='col-lg-4 col-10 offset-1'>
 
+            <UXPortfolioCard project={'TouchChat Application Redesign'} tools={['Figma']} link={'https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01'} image={'images/projects/hci.png'} />
+
+
+
+            </div>
+
+
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+            
+            <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva']} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
+
+            </div>
+
+            <div className='col-lg-4 col-10 offset-1'>
+            
             <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
 
             </div>
 
-
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
-
-            <UXPortfolioCard project={'Online Portfolio'} tools={['Figma']} link={'https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1'} image={'images/projects/portfolio.png'} />
-
-            </div>
-
-            <div className='col-lg-4 col-10 offset-1'>
 
             <UXPortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810'} image={'images/projects/chroma.png'} />
 
             </div>
+            <div className='col-lg-4 col-10 offset-1'>
 
-            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
-
-            <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva']} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
-
+              <UXPortfolioCard project={'Online Portfolio'} tools={['Figma']} link={'https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1'} image={'images/projects/portfolio.png'} />
             </div>
+
 
           </div>
 

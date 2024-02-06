@@ -310,7 +310,7 @@ function App() {
                 <h1>Sheida Rashidi</h1>
                 <h2>Developer / Designer</h2>
                 <p>I am a passionate individual with a strong affinity for development, AI, and UX design, particularly in the domains of accessibility and inclusion. I thrive on creating digital experiences that empower and cater to diverse user needs. With a deep understanding of both technical aspects and user-centric design principles, I strive to bridge the gap between innovation and inclusivity, ensuring that technology is accessible and enriching for all individuals.</p>
-                <button className='button'>
+                <button className='button' href='files/Resume.pdf' target='blank'>
                   <span>Get my resume</span><FontAwesomeIcon icon={faFileLines} />
                 </button>
               </div>

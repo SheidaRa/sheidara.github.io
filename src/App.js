@@ -184,46 +184,53 @@ function App() {
 
                 <div className='col-lg-4'>
 
+                <PortfolioCard project={'Rate This Rental'} tools={['React','Ruby','Bootstrap','Figma']} link={'https://github.com/SheidaRa/Rate-This-Rental'} image={'images/projects/RTR.png'} />
+
+
+                </div>
+
+                <div className='col-lg-4 offset-lg-2'>
+
+
                 <PortfolioCard project={'Tetris Puzzle App'} tools={['Swift', 'XCode', 'SpriteKit']} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
 
 
                 </div>
 
-                <div className='col-lg-4 offset-lg-2'>
+                <div className='col-lg-4'>
 
                   <PortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://github.com/SheidaRa/'} image={'images/projects/chroma.png'} />
 
                 </div>
+                <div className='col-lg-4 offset-lg-2'>
 
-                <div className='col-lg-4'>
 
                   <PortfolioCard project={'Online Portfolio'} tools={['React', 'NextJS', 'JavaScript']} link={'https://github.com/SheidaRa/SheidaRa.github.io'} image={'images/projects/portfolio.png'} />
 
 
                 </div>
-
-                <div className='col-lg-4 offset-lg-2'>
+                <div className='col-lg-4'>
 
                   <PortfolioCard project={'Sudoku Solver'} tools={['Python', 'Backtracking']} link={'https://github.com/SheidaRa/SudokuPuzzle'} image={'images/projects/sudoku.png'} />
 
 
                 </div>
 
-                <div className='col-lg-4'>
+                <div className='col-lg-4 offset-lg-2'>
 
                   <PortfolioCard project={'Fantasy Safe'} tools={['Java', 'AndroidStudio']} link={'https://github.com/SheidaRa/Fantasy-Safe'} image={'images/projects/fantasySafe.jpg'} />
 
 
                 </div>
 
-                <div className='col-lg-4 offset-lg-2'>
+                <div className='col-lg-4'>
 
                   <PortfolioCard project={'Smart Mailbox'} tools={['Python', 'RaspberryPi', 'IoT']} link={'https://github.com/SheidaRa/Smart-Mail-Box'} image={'images/projects/mailBox.jpg'} />
 
                 </div>
 
                
-                <div className='col-lg-4'>
+                <div className='col-lg-4 offset-lg-2'>
 
                   <PortfolioCard project={'My Planner Application'} tools={['Java']} link={'https://github.com/SheidaRa/MyPlanner'} image={'images/projects/planner.png'} />
 
@@ -241,36 +248,40 @@ function App() {
                 <div className='col-lg-4 offset-lg-2'>
                 <UXPortfolioCard project={'Rate This Rental'} tools={['Figma']} link={'https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1'} image={'images/projects/RTR.png'} />
 
-
-
                 </div>
 
                 <div className='col-lg-4'>
                   <UXPortfolioCard project={'TouchChat Application Redesign'} tools={['Figma']} link={'https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01'} image={'images/projects/hci.png'} />
 
+                </div>
+
+                <div className='col-lg-4 offset-lg-2'>
+
+                  <UXPortfolioCard project={'Circle Dating App Design'} tools={['Figma']} link={'https://www.figma.com/file/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?type=design&node-id=0%3A1&mode=design&t=avpU1etV2FY6i0Lp-1'} image={'images/projects/circle.jpg'} />
+
+                </div>
+
+                <div className='col-lg-4'>
+                  
+                  <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva' ]} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
 
 
                 </div>
 
                 <div className='col-lg-4 offset-lg-2'>
-                            <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva' ]} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
+                  
+                  <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
+
 
 
                 </div>
 
                 <div className='col-lg-4'>
-                              <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
-
-
-
-                </div>
-
-                <div className='col-lg-4 offset-lg-2'>
                 <UXPortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810'} image={'images/projects/chroma.png'} />
 
 
                 </div>
-               <div className='col-lg-4'>
+                <div className='col-lg-4 offset-lg-2'>
 
 
                   <UXPortfolioCard project={'Online Portfolio'} tools={['Figma']} link={'https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1'} image={'images/projects/portfolio.png'} />
@@ -417,44 +428,50 @@ function App() {
             <PortfolioCard project={'Sign Language Recognizer'} tools={['Python', 'Media Pipe']} link={'https://github.com/SheidaRa'} image={'images/projects/hand.png'} />
 
             </div>
-
             <div className='col-lg-4 col-10 offset-1'>
+
+            <PortfolioCard project={'Rate This Rental'} tools={['React','Ruby','Bootstrap','Figma']} link={'https://github.com/SheidaRa/Rate-This-Rental'} image={'images/projects/RTR.png'} />
+
+            </div>
+
+
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
             <PortfolioCard project={'Tetris Puzzle App'} tools={['Swift', 'XCode', 'SpriteKit']} link={'https://github.com/SheidaRa/TetrisGame'} image={'images/projects/tetris.png'} />
 
             </div>
+            <div className='col-lg-4 col-10 offset-1'>
 
-            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
             <PortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://github.com/SheidaRa/'} image={'images/projects/chroma.png'} />
 
             </div>
 
-            <div className='col-lg-4 col-10 offset-1'>
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
             <PortfolioCard project={'Online Portfolio'} tools={['React', 'NextJS', 'JavaScript']} link={'https://github.com/SheidaRa/SheidaRa.github.io'} image={'images/projects/portfolio.png'} />
 
             </div>
 
-            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+            <div className='col-lg-4 col-10 offset-1'>
 
             <PortfolioCard project={'Sudoku Solver'} tools={['Python', 'Backtracking']} link={'https://github.com/SheidaRa/SudokuPuzzle'} image={'images/projects/sudoku.png'} />
 
             </div>
 
-            <div className='col-lg-4 col-10 offset-1'>
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
             <PortfolioCard project={'Fantasy Safe'} tools={['Java', 'AndroidStudio']} link={'https://github.com/SheidaRa/Fantasy-Safe'} image={'images/projects/fantasySafe.jpg'} />
 
             </div>
 
-            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+            <div className='col-lg-4 col-10 offset-1'>
 
             <PortfolioCard project={'Smart Mailbox'} tools={['Python', 'RaspberryPi', 'IoT']} link={'https://github.com/SheidaRa/Smart-Mail-Box'} image={'images/projects/mailBox.jpg'} />
 
             </div>
 
-            <div className='col-lg-4 col-10 offset-1'>
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
             <PortfolioCard project={'My Planner Application'} tools={['Java']} link={'https://github.com/SheidaRa/MyPlanner'} image={'images/projects/planner.png'} />
 
@@ -479,27 +496,33 @@ function App() {
 
             <UXPortfolioCard project={'TouchChat Application Redesign'} tools={['Figma']} link={'https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01'} image={'images/projects/hci.png'} />
 
-
             </div>
 
             <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+            <UXPortfolioCard project={'Circle Dating App Design'} tools={['Figma']} link={'https://www.figma.com/file/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?type=design&node-id=0%3A1&mode=design&t=avpU1etV2FY6i0Lp-1'} image={'images/projects/circle.jpg'} 
+ />
+
+            </div>
+
+            <div className='col-lg-4 col-10 offset-1'>
             
             <UXPortfolioCard project={'Tetris Puzzle App'} tools={['Figma', 'Canva']} link={'https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1'} image={'images/projects/tetris.png'} />
 
             </div>
 
-            <div className='col-lg-4 col-10 offset-1'>
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
             
             <UXPortfolioCard project={'GogyUp Reader Redesign'} tools={['Canva']} link={'https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page'} image={'images/places/gogyup.png'} />
 
             </div>
 
-            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
+            <div className='col-lg-4 col-10 offset-1'>
 
             <UXPortfolioCard project={'ChromaVR'} tools={['A-Frame', 'JavaScript', 'HTML']} link={'https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810'} image={'images/projects/chroma.png'} />
 
             </div>
-            <div className='col-lg-4 col-10 offset-1'>
+
+            <div className='col-lg-4 offset-lg-2 col-10 offset-1'>
 
               <UXPortfolioCard project={'Online Portfolio'} tools={['Figma']} link={'https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1'} image={'images/projects/portfolio.png'} />
             </div>

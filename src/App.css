@@ -316,6 +316,11 @@ h1 {
     display: none;
   }
 
+  .infoModal {
+    margin-left: 3.6em;
+    width: 26.6em;
+  }
+
   .desktop {
     display: none;
   }
@@ -330,6 +335,13 @@ h1 {
 
   .portfolio-img:before {
     height: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .infoModal {
+    margin-left: 10.6%;
+    width: 79%;
   }
 }
 

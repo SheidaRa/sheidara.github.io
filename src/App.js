@@ -461,7 +461,7 @@ function App() {
                 </div>
 
                 <div
-                  className={`infoModal col-8 ${
+                  className={`infoModal ${
                     expandedItem === 0 ? "hideModal" : "showModal"
                   }`}
                 >
@@ -642,6 +642,14 @@ function App() {
                   "https://www.figma.com/file/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?type=design&node-id=0%3A1&mode=design&t=avpU1etV2FY6i0Lp-1"
                 }
                 image={"images/projects/circle.jpg"}
+                handleToggleExpansion={() =>
+                  handleToggleExpansion(
+                    33, //unique id
+                    "Circle", //project title
+                    <Example />, //writing
+                    "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
+                  )
+                }
               />
             </div>
 
@@ -687,6 +695,23 @@ function App() {
                 }
                 image={"images/projects/portfolio.png"}
               />
+            </div>
+            <div
+              className={`infoModal ${
+                expandedItem === 0 ? "hideModal" : "showModal"
+              }`}
+            >
+              <div className="cardContentHeader">
+                <a className="codeButton" href={codeLink} target="blank">
+                  Get the code
+                </a>
+                <RxCross2
+                  onClick={() => setExpandedItem(0)}
+                  className="closeIcon"
+                />
+              </div>
+              <h2>{title}</h2>
+              {content}
             </div>
           </div>
         </section>

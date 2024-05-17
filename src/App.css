@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800;900&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Commissioner', sans-serif;
+  font-family: "Commissioner", sans-serif;
   font-weight: 300;
   background-color: #000;
   color: #fff;
 }
 
 :root {
-  --main-color: #78A2FF;
-  --button-hover-bg-color: #94B9A340;
+  --main-color: #78a2ff;
+  --button-hover-bg-color: #94b9a340;
 }
 
 .section {
@@ -59,29 +59,35 @@ h1 {
   width: 90%;
   height: 90%;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 212, 255, 0) 100%), url('../public/images/sheida.png');
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(0, 212, 255, 0) 100%
+    ),
+    url("../public/images/sheida.png");
   background-size: cover;
 }
 
 .nav-button {
   text-transform: uppercase;
-  padding: .7em;
+  padding: 0.7em;
   border: none;
   background: none;
   color: #fff;
   border-left: var(--main-color) solid;
-  transition: all .3s;
+  transition: all 0.3s;
   text-align: left;
 }
 
 .button {
   text-transform: uppercase;
-  padding: .7em;
+  padding: 0.7em;
   border: none;
   background: none;
   color: #fff;
   border-left: var(--main-color) solid;
-  transition: all .3s;
+  transition: all 0.3s;
   text-align: left;
   min-width: 250px;
   display: inline-flex;
@@ -93,7 +99,7 @@ h1 {
 .button span {
   left: 0;
   position: relative;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .button:hover {
@@ -128,8 +134,8 @@ h1 {
 
 .education-img:hover,
 .work-img:hover {
-  box-shadow: 0 0 30px #3D6595; 
-  transition: box-shadow 0.3s ease; 
+  box-shadow: 0 0 30px #3d6595;
+  transition: box-shadow 0.3s ease;
   width: 100%;
   height: 277px;
   object-fit: cover;
@@ -169,10 +175,9 @@ h1 {
 .nav-link {
   text-transform: uppercase;
   color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
   cursor: pointer;
-  Font-size: 13px 
-
+  font-size: 13px;
 }
 
 .nav-link:hover,
@@ -181,7 +186,7 @@ h1 {
 }
 
 .nav-link:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .nav-link.active {
@@ -211,14 +216,19 @@ h1 {
 }
 
 .portfolio-img:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   height: 0%;
   width: 100%;
   bottom: 0;
-  transition: height .3s ease-out;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7875525210084033) 35%, rgba(0, 212, 255, 0) 100%);
+  transition: height 0.3s ease-out;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7875525210084033) 35%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
 
 .portfolio-img:hover:before {
@@ -228,7 +238,7 @@ h1 {
 .portfolio-content {
   padding: 1em;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: 1;
 }
 
@@ -243,6 +253,61 @@ h1 {
 .socials svg {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.showModal {
+  transform: translateY(0);
+  top: 0;
+  max-height: 80%;
+  padding: 1em;
+}
+
+.hideModal {
+  transform: translateY(-100%);
+  top: 100vh;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Info modal css */
+.infoModal {
+  position: fixed;
+  background-color: #c4c4c4;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+  z-index: 1;
+  margin-top: 5.5em;
+  margin-left: 14.5em;
+  width: 53.5em;
+  overflow-y: scroll;
+}
+
+.infoModal img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.cardContentHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.closeIcon {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.codeButton {
+  padding: 1em 2em;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  text-decoration: none;
+  color: #04060a;
+  margin-bottom: 1em;
 }
 
 /* Css for devices with a width inferior to 768px, so including mobile phones */
@@ -266,7 +331,34 @@ h1 {
   .portfolio-img:before {
     height: 100%;
   }
+}
 
+@media (min-width: 769px) {
+  .infoModal {
+    margin-left: 0.8em;
+    width: 43.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  .infoModal {
+    margin-left: 10.7em;
+    width: 38.6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .infoModal {
+    margin-left: 12.6em;
+    width: 46em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .infoModal {
+    margin-left: 14.5em;
+    width: 53.5em;
+  }
 }
 
 @media (min-width: 769px) {
@@ -285,11 +377,11 @@ h1 {
 
 .carousel-fade .active.carousel-item-start {
   opacity: 0;
-  transition: all .6s
+  transition: all 0.6s;
 }
 
 .carousel .active.carousel-item-end {
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 .tools {
@@ -298,10 +390,10 @@ h1 {
 
 .tools span {
   background-color: var(--button-hover-bg-color);
-  padding: .6em;
+  padding: 0.6em;
   border-radius: 25px;
   margin-right: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   min-width: 55px;
   text-align: center;
 }

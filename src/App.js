@@ -1,7 +1,7 @@
 // imports to use bootstrap for responsiveness and carousel, fontawesome for icons
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileLines, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
@@ -18,6 +18,24 @@ import { RxCross2 } from "react-icons/rx";
 
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
+
+  //info window ref
+  const infoRef = useRef(null)
+
+  //Close info window when click outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (infoRef.current && !infoRef.current.contains(event.target)) {
+        setExpandedItem(0)
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const handleSlideClick = (slideIndex) => {
     setActiveSlide(slideIndex);
@@ -397,7 +415,7 @@ function App() {
                       handleToggleExpansion(
                         3, //unique id
                         "Circle", //project title
-                        <Example />, //writing
+                        //<Example />, writing
                         "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
                       )
                     }
@@ -416,7 +434,7 @@ function App() {
                       handleToggleExpansion(
                         4,
                         "Tetris",
-                        <Example />,
+                        //<Example />,
                         "https://www.figma.com/design/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?t=wFYlj9dELbKvbBWl-0"
                       )
                     }
@@ -435,7 +453,7 @@ function App() {
                       handleToggleExpansion(
                         2,
                         "GogyUp",
-                        <Example />,
+                        //<Example />,
                         "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
                       )
                     }
@@ -454,7 +472,7 @@ function App() {
                       handleToggleExpansion(
                         3, //unique id
                         "Circle", //project title
-                        <Example />, //writing
+                        //<Example />,
                         "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
                       )
                     }
@@ -472,6 +490,7 @@ function App() {
                 </div>
 
                 <div
+                ref={infoRef}
                   className={`infoModal ${
                     expandedItem === 0 ? "hideModal" : "showModal"
                   }`}
@@ -657,7 +676,7 @@ function App() {
                   handleToggleExpansion(
                     33, //unique id
                     "Circle", //project title
-                    <Example />, //writing
+                    //<Example />, 
                     "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
                   )
                 }

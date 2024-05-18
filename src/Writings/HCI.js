@@ -1,6 +1,6 @@
 import React from "react";
 
-const Example = () => {
+const HCI = () => {
   return (
     <>
 
@@ -117,4 +117,4 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default HCI;

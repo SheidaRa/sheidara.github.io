@@ -11,7 +11,9 @@ import EducationCard from "./Components/EducationCard";
 import WorkCard from "./Components/WorkCard";
 import PortfolioCard from "./Components/PortfolioCard";
 import UXPortfolioCard from "./Components/UXPortfolioCard";
-import Example from "./Writings/Example";
+import HCI from "./Writings/HCI";
+import Chroma from "./Writings/Chroma";
+
 import { RxCross2 } from "react-icons/rx";
 
 function App() {
@@ -376,7 +378,7 @@ function App() {
                       handleToggleExpansion(
                         2,
                         "TouchChat",
-                        <Example />,
+                        <HCI />,
                         "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
                       );
                     }}
@@ -448,6 +450,14 @@ function App() {
                       "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810"
                     }
                     image={"images/projects/chroma.jpg"}
+                    handleToggleExpansion={() =>
+                      handleToggleExpansion(
+                        3, //unique id
+                        "Circle", //project title
+                        <Example />, //writing
+                        "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
+                      )
+                    }
                   />
                 </div>
                 <div className="col-lg-4 offset-lg-2">

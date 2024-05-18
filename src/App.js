@@ -470,9 +470,9 @@ function App() {
                     image={"images/projects/chroma.jpg"}
                     handleToggleExpansion={() =>
                       handleToggleExpansion(
-                        3, //unique id
-                        "Circle", //project title
-                        //<Example />,
+                        5, //unique id
+                        "Exploring Emotions in VR", //project title
+                        <Chroma />, //writing
                         "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
                       )
                     }

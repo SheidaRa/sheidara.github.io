@@ -7,8 +7,8 @@ html {
 body {
   font-family: "Commissioner", sans-serif;
   font-weight: 300;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 :root {
@@ -62,10 +62,10 @@ h1 {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.2) 10%,
-      rgba(0, 212, 255, 0) 100%
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 212, 255, 0) 0%
     ),
-    url("../public/images/sheida.png");
+    url("../public/images/shapes.gif");
   background-size: cover;
 }
 
@@ -74,7 +74,7 @@ h1 {
   padding: 0.7em;
   border: none;
   background: none;
-  color: #fff;
+  color: #000;
   border-left: var(--main-color) solid;
   transition: all 0.3s;
   text-align: left;
@@ -85,7 +85,7 @@ h1 {
   padding: 0.7em;
   border: none;
   background: none;
-  color: #fff;
+  color: #000;
   border-left: var(--main-color) solid;
   transition: all 0.3s;
   text-align: left;
@@ -121,6 +121,7 @@ h1 {
 .work-card h4 {
   font-size: 15px;
   color: var(--main-color);
+  
 }
 
 .education-img img,
@@ -130,6 +131,8 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .education-img:hover,
@@ -174,7 +177,7 @@ h1 {
 
 .nav-link {
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   transition: all 0.3s;
   cursor: pointer;
   font-size: 13px;
@@ -182,7 +185,7 @@ h1 {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: #000;
 }
 
 .nav-link:hover {
@@ -196,7 +199,7 @@ h1 {
 }
 
 .navbar {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .navbar ul {
@@ -213,6 +216,8 @@ h1 {
   position: relative;
   display: flex;
   align-items: end;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .portfolio-img:before {
@@ -225,8 +230,8 @@ h1 {
   transition: height 0.3s ease-out;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.7875525210084033) 35%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7875525210084033) 35%,
     rgba(0, 212, 255, 0) 100%
   );
 }

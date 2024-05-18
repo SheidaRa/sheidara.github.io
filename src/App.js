@@ -108,7 +108,7 @@ function App() {
                 {/* that's the 1st column, the one with the text */}
                 <div className="col-lg-4 offset-lg-2">
                   <div className="presentation">
-                    <div className="hello">Hello, I am</div>
+                    {/* <div className="hello">Hello, I am</div> */}
                     <h1>Sheida Rashidi</h1>
                     <h2>Developer / Designer</h2>
                     <p>
@@ -122,14 +122,14 @@ function App() {
                       inclusivity, ensuring that technology is accessible and
                       enriching for all individuals.
                     </p>
-                    <a
+                    {/* <a
                       className="button"
                       href="files/Resume.pdf"
                       target="blank"
                     >
                       <span>Get my resume</span>
                       <FontAwesomeIcon icon={faFileLines} />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
 
@@ -138,6 +138,7 @@ function App() {
                 <div className="col-lg-4 ">
                   <div className="my-image"></div>
                 </div>
+
               </div>
             </section>
           </Carousel.Item>
@@ -281,7 +282,7 @@ function App() {
                     project={"Rate This Rental"}
                     tools={["React", "Ruby", "Bootstrap", "Figma"]}
                     link={"https://github.com/SheidaRa/Rate-This-Rental"}
-                    image={"images/projects/RTR.png"}
+                    image={"images/projects/RTR.jpg"}
                   />
                 </div>
 
@@ -290,7 +291,7 @@ function App() {
                     project={"Tetris Puzzle App"}
                     tools={["Swift", "XCode", "SpriteKit"]}
                     link={"https://github.com/SheidaRa/TetrisGame"}
-                    image={"images/projects/tetris.png"}
+                    image={"images/projects/tetris.jpg"}
                   />
                 </div>
 
@@ -299,7 +300,7 @@ function App() {
                     project={"ChromaVR"}
                     tools={["A-Frame", "JavaScript", "HTML"]}
                     link={"https://github.com/SheidaRa/"}
-                    image={"images/projects/chroma.png"}
+                    image={"images/projects/chroma.jpg"}
                   />
                 </div>
                 <div className="col-lg-4 offset-lg-2">
@@ -359,7 +360,7 @@ function App() {
                     link={
                       "https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1"
                     }
-                    image={"images/projects/RTR.png"}
+                    image={"images/projects/RTR.jpg"}
                   />
                 </div>
 
@@ -370,7 +371,7 @@ function App() {
                     link={
                       "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
                     }
-                    image={"images/projects/hci.png"}
+                    image={"images/projects/hci.jpg"}
                     handleToggleExpansion={() => {
                       handleToggleExpansion(
                         2,
@@ -408,7 +409,7 @@ function App() {
                     link={
                       "https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1"
                     }
-                    image={"images/projects/tetris.png"}
+                    image={"images/projects/tetris.jpg"}
                     handleToggleExpansion={() =>
                       handleToggleExpansion(
                         4,
@@ -427,7 +428,7 @@ function App() {
                     link={
                       "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
                     }
-                    image={"images/places/gogyup.png"}
+                    image={"images/projects/gogyup.jpg"}
                     handleToggleExpansion={() =>
                       handleToggleExpansion(
                         2,
@@ -446,7 +447,7 @@ function App() {
                     link={
                       "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810"
                     }
-                    image={"images/projects/chroma.png"}
+                    image={"images/projects/chroma.jpg"}
                   />
                 </div>
                 <div className="col-lg-4 offset-lg-2">
@@ -539,7 +540,7 @@ function App() {
                 project={"Rate This Rental"}
                 tools={["React", "Ruby", "Bootstrap", "Figma"]}
                 link={"https://github.com/SheidaRa/Rate-This-Rental"}
-                image={"images/projects/RTR.png"}
+                image={"images/projects/RTR.jpg"}
               />
             </div>
 
@@ -548,7 +549,7 @@ function App() {
                 project={"Tetris Puzzle App"}
                 tools={["Swift", "XCode", "SpriteKit"]}
                 link={"https://github.com/SheidaRa/TetrisGame"}
-                image={"images/projects/tetris.png"}
+                image={"images/projects/tetris.jpg"}
               />
             </div>
             <div className="col-lg-4 col-10 offset-1">
@@ -556,7 +557,7 @@ function App() {
                 project={"ChromaVR"}
                 tools={["A-Frame", "JavaScript", "HTML"]}
                 link={"https://github.com/SheidaRa/"}
-                image={"images/projects/chroma.png"}
+                image={"images/projects/chroma.jpg"}
               />
             </div>
 
@@ -620,7 +621,7 @@ function App() {
                 link={
                   "https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1"
                 }
-                image={"images/projects/RTR.png"}
+                image={"images/projects/RTR.jpg"}
               />
             </div>
             <div className="col-lg-4 col-10 offset-1">
@@ -630,7 +631,7 @@ function App() {
                 link={
                   "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
                 }
-                image={"images/projects/hci.png"}
+                image={"images/projects/hci.jpg"}
               />
             </div>
 
@@ -660,7 +661,7 @@ function App() {
                 link={
                   "https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1"
                 }
-                image={"images/projects/tetris.png"}
+                image={"images/projects/tetris.jpg"}
               />
             </div>
 
@@ -671,7 +672,7 @@ function App() {
                 link={
                   "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
                 }
-                image={"images/places/gogyup.png"}
+                image={"images/projects/gogyup.jpg"}
               />
             </div>
 
@@ -682,7 +683,7 @@ function App() {
                 link={
                   "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810"
                 }
-                image={"images/projects/chroma.png"}
+                image={"images/projects/chroma.jpg"}
               />
             </div>
 

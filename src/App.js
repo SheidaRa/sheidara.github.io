@@ -2,8 +2,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/js/src/scrollspy.js";
 import Carousel from "react-bootstrap/Carousel";
 import Navbar from "./Components/Navbar";

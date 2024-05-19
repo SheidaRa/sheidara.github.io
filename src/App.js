@@ -13,6 +13,7 @@ import PortfolioCard from "./Components/PortfolioCard";
 import UXPortfolioCard from "./Components/UXPortfolioCard";
 import HCI from "./Writings/HCI";
 import Chroma from "./Writings/Chroma";
+import RTR from "./Writings/RTR";
 
 import { RxCross2 } from "react-icons/rx";
 
@@ -381,6 +382,14 @@ function App() {
                       "https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1"
                     }
                     image={"images/projects/RTR.jpg"}
+                    handleToggleExpansion={() => {
+                      handleToggleExpansion(
+                        1,
+                        "RTR",
+                        <RTR />,
+                        "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
+                      );
+                    }}
                   />
                 </div>
 
@@ -451,7 +460,7 @@ function App() {
                     image={"images/projects/gogyup.jpg"}
                     handleToggleExpansion={() =>
                       handleToggleExpansion(
-                        2,
+                        5,
                         "GogyUp",
                         //<Example />,
                         "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
@@ -470,7 +479,7 @@ function App() {
                     image={"images/projects/chroma.jpg"}
                     handleToggleExpansion={() =>
                       handleToggleExpansion(
-                        5, //unique id
+                        6, //unique id
                         "Exploring Emotions in VR", //project title
                         <Chroma />, //writing
                         "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
@@ -486,6 +495,14 @@ function App() {
                       "https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1"
                     }
                     image={"images/projects/portfolio.png"}
+                    handleToggleExpansion={() => {
+                      handleToggleExpansion(
+                        7,
+                        "TouchChat",
+                        <HCI />,
+                        "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
+                      );
+                    }}
                   />
                 </div>
 

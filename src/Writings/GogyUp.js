@@ -1,12 +1,7 @@
 import React from "react";
 
-const GogyUp = () => {
-  return (
-    <>
-
-
-    </>
-  );
+const GogyUp = ({ zoomImage, expandTitle }) => {
+  return <></>;
 };
 
 export default GogyUp;

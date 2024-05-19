@@ -1,6 +1,6 @@
 import React from "react";
 
-const Chroma = () => {
+const Chroma = ({ zoomImage, expandTitle }) => {
   return (
     <>
       <iframe
@@ -83,6 +83,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*Zd3kYicjBs1-UwjKO5Ez4g.gif"
           alt=" a gif of scketches made while rainstorming session in Idea Lab "
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*Zd3kYicjBs1-UwjKO5Ez4g.gif"
+            )
+          }
         />
         <p>
           <strong>Brainstorming session </strong>
@@ -124,6 +130,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*ajHoszWv9-EXQfBEbOQ-zA.png"
           alt=" A Photo of a Emotional Color Wheel"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*ajHoszWv9-EXQfBEbOQ-zA.png"
+            )
+          }
         />
         <p>Emotional Color Wheel(Source: Lindly's Blog)</p>
       </div>
@@ -150,6 +162,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*vI0pa9ZcGEv2fa_C-oK-fA.png"
           alt="Brainstorming session scketche"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*vI0pa9ZcGEv2fa_C-oK-fA.png"
+            )
+          }
         />
         <p>
           <strong>Brainstorming session</strong>
@@ -215,6 +233,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*S-FwLV2zqFV9guqukSpWdw.gif"
           alt=" A gif of 3D models for the main room "
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*S-FwLV2zqFV9guqukSpWdw.gif"
+            )
+          }
         />
         <p>
           <strong>3D models for the main room</strong>
@@ -249,6 +273,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*MBlKvnf2Tb7h4ReQeqVnlQ.gif"
           alt=" A gif of rainstorming session of danger room sketches"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*MBlKvnf2Tb7h4ReQeqVnlQ.gif"
+            )
+          }
         />
         <p>
           <strong>Brainstorming session of danger room sketches</strong>
@@ -270,6 +300,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*gfsuBzJ2dzi_oTUOgMBh1A.gif"
           alt=" A gif of 3D models for the danger room "
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*gfsuBzJ2dzi_oTUOgMBh1A.gif"
+            )
+          }
         />
         <p>
           <strong>3D models for the danger room</strong>
@@ -294,6 +330,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*tqd56mLp8tJVCk5kRAv7hg.gif"
           alt=" A gif of 3D models for the calm room"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*tqd56mLp8tJVCk5kRAv7hg.gif"
+            )
+          }
         />
         <p>
           <strong>3D models for the calm room</strong>
@@ -316,6 +358,12 @@ const Chroma = () => {
         <img
           src="https://cdn-images-1.medium.com/max/1200/1*zuid3YSbaeDkpT19971w_w.gif"
           alt=" A gif ofUser testing session in library"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://cdn-images-1.medium.com/max/1200/1*zuid3YSbaeDkpT19971w_w.gif"
+            )
+          }
         />
       </div>
 
@@ -346,6 +394,12 @@ const Chroma = () => {
       <img
         src="https://cdn-images-1.medium.com/max/1200/1*wwA7PtDlm-8MHiRB9fuKbQ.gif"
         alt=" A gif ofUser testing session in library"
+        title={expandTitle}
+        onClick={() =>
+          zoomImage(
+            "https://cdn-images-1.medium.com/max/1200/1*wwA7PtDlm-8MHiRB9fuKbQ.gif"
+          )
+        }
       />
       <p>
         <strong>User testing session</strong>

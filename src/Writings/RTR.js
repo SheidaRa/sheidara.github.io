@@ -1,6 +1,6 @@
 import React from "react";
 
-const RTR = () => {
+const RTR = ({ zoomImage, expandTitle }) => {
   return (
     <>
       {/* <h1>Project Overview: Rate Your Landlord Web Application</h1> */}
@@ -42,7 +42,12 @@ const RTR = () => {
       </p>
 
       <div className="img-wrapper">
-        <img src="images/Writings/RTROthers.jpg" alt="Competitor SreenShots" />
+        <img
+          src="images/Writings/RTROthers.jpg"
+          alt="Competitor SreenShots"
+          title={expandTitle}
+          onClick={() => zoomImage("images/Writings/RTROthers.jpg")}
+        />
         <p>Competitor Examples</p>
       </div>
 
@@ -91,7 +96,12 @@ const RTR = () => {
       </ul>
 
       <div className="img-wrapper">
-        <img src="images/Writings/RTRWF.jpg" alt="Initial Wire Frames" />
+        <img
+          src="images/Writings/RTRWF.jpg"
+          alt="Initial Wire Frames"
+          title={expandTitle}
+          onClick={() => zoomImage("images/Writings/RTRWF.jpg")}
+        />
         <p>Initial Wire Frames</p>
       </div>
 
@@ -108,7 +118,12 @@ const RTR = () => {
           users.
         </li>
       </ul>
-      <img src="images/Writings/RTRColor.png" alt="Color Scheem" />
+      <img
+        src="images/Writings/RTRColor.png"
+        alt="Color Scheem"
+        title={expandTitle}
+        onClick={() => zoomImage("images/Writings/RTRColor.png")}
+      />
       <p>Chosen Color Scheme</p>
 
       <h3>User Interaction</h3>

@@ -1,12 +1,14 @@
 import React from "react";
 
-const HCI = () => {
+const HCI = ({ zoomImage, expandTitle }) => {
   return (
     <>
       <div className="img-wrapper">
         <img
           src="images/projects/hci.jpg"
           alt="Hi-fi prototype for an AAC device on a tablet"
+          title={expandTitle}
+          onClick={() => zoomImage("images/projects/hci.jpg")}
         />
         <p>A screen of our hi-fi prototype for an AAC device on tablet</p>
       </div>
@@ -38,6 +40,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qZaEy3_t1hMBsnAOo2Oc4g.png"
           alt="Image depicting our design process"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qZaEy3_t1hMBsnAOo2Oc4g.png"
+            )
+          }
         />
       </div>
 
@@ -57,6 +65,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*r1vhdvJPPZxJC-lXP1Fevg.jpeg"
           alt="Chart of values and value tensions for stakeholders"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*r1vhdvJPPZxJC-lXP1Fevg.jpeg"
+            )
+          }
         />
         <p>A chart of values and value tensions for stakeholders</p>
       </div>
@@ -92,6 +106,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Twbv_9NYDWarFg1LXQsWMg.png"
           alt="Pain points from our four panelists"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Twbv_9NYDWarFg1LXQsWMg.png"
+            )
+          }
         />
         <p>Pain points from our four panelists</p>
       </div>
@@ -108,6 +128,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*_j3fs5-gz7lQ1ZdNcK8yzQ.png"
           alt="Affinity diagramming"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*_j3fs5-gz7lQ1ZdNcK8yzQ.png"
+            )
+          }
         />
       </div>
 
@@ -141,6 +167,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:750/format:webp/1*O9zIRfsTstwRnJCjsLWThg.png"
           alt="Sketches for potential features"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*O9zIRfsTstwRnJCjsLWThg.png"
+            )
+          }
         />
         <p>Sketches for potential features</p>
       </div>
@@ -173,6 +205,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*9YYbeaIFcI1lRZNoO0kIGg.png"
           alt="Our paper sketches — including the homepage, profile, and history screens"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*9YYbeaIFcI1lRZNoO0kIGg.png"
+            )
+          }
         />
         <p>
           Our paper sketches — including the homepage, profile, and history
@@ -197,6 +235,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
           alt="Homepage with categories, access to history and wait buttons"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
+            )
+          }
         />
         <p>Homepage with categories, access to history and wait buttons</p>
       </div>
@@ -210,6 +254,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
           alt="Profile page with customizations"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
+            )
+          }
         />
         <p>Profile page with customizations</p>
       </div>
@@ -224,6 +274,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
           alt="History page with access to saved conversations"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
+            )
+          }
         />
         <p>History page with access to saved conversations</p>
       </div>
@@ -247,6 +303,12 @@ const HCI = () => {
         <img
           src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
           alt="Storyboarding"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
+            )
+          }
         />
         <p>Storyboarding</p>
       </div>
@@ -299,7 +361,15 @@ const HCI = () => {
       </p>
 
       <div className="img-wrapper">
-        <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif" />
+        <img
+          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
+            )
+          }
+        />
         <p>Homepage with categories, access to history and wait buttons</p>
       </div>
 
@@ -309,7 +379,15 @@ const HCI = () => {
       </p>
 
       <div className="img-wrapper">
-        <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif" />
+        <img
+          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
+            )
+          }
+        />
         <p>Profile page with customizations</p>
       </div>
 
@@ -320,7 +398,15 @@ const HCI = () => {
       </p>
 
       <div className="img-wrapper">
-        <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif" />
+        <img
+          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
+            )
+          }
+        />
         <p>History page with access to saved conversations</p>
       </div>
 
@@ -334,7 +420,15 @@ const HCI = () => {
       </p>
 
       <div className="img-wrapper">
-        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png" />
+        <img
+          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
+          title={expandTitle}
+          onClick={() =>
+            zoomImage(
+              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
+            )
+          }
+        />
         <p>Storyboarding</p>
       </div>
 

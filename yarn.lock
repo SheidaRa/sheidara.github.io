@@ -8105,7 +8105,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.0.0, react-dom@^18.2.0, react-dom@>=16.14.0, react-dom@>=16.6.0:
+react-dom@^18.0.0, react-dom@^18.2.0, react-dom@>=16.14.0, react-dom@>=16.6.0, react-dom@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -10155,6 +10155,11 @@ yargs@^16.2.0:
     string-width "^4.2.0"
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
+
+yet-another-react-lightbox@^3.18.0:
+  version "3.18.0"
+  resolved "https://registry.npmjs.org/yet-another-react-lightbox/-/yet-another-react-lightbox-3.18.0.tgz"
+  integrity sha512-Zf3Stgp+gSAZe5Uy45OJDDxxXoE+fENZjJnAa7HD+yb/5xAhBQqqz8K7u4kAuj12lexEOASks2wHeYaZ+yUVnQ==
 
 yocto-queue@^0.1.0:
   version "0.1.0"

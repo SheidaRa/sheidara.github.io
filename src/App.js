@@ -12,9 +12,17 @@ import UX from "./Pages/UX";
 import InfoModal from "./Components/InfoModal";
 import Education from "./Pages/Education";
 import AboutMobile from "./Pages/AboutMobile";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
+
+  const [open, setOpen] = useState(false);
+  const [slides, setSlides] = useState([]);
+
+  const zoomRef = useRef(null);
 
   //info window ref
   const infoRef = useRef(null);
@@ -22,7 +30,14 @@ function App() {
   //Close info window when click outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (infoRef.current && !infoRef.current.contains(event.target)) {
+      console.log(event.target);
+      if (
+        infoRef.current &&
+        !infoRef.current.contains(event.target) &&
+        !event.target.classList.contains("yarl__icon") &&
+        !event.target.classList.contains("yarl__button") &&
+        event.target.tagName.toLowerCase() !== "path"
+      ) {
         setExpandedItem(0);
       }
     };
@@ -55,8 +70,13 @@ function App() {
     }
   };
 
+  const zoomImage = (path) => {
+    setOpen(true);
+    setSlides([{ src: path }]);
+  };
+
   return (
-    <div>
+    <div className="page-wrapper">
       {/* DESKTOP PART */}
       <div className="container desktop">
         <Navbar handleSlideClick={handleSlideClick} activeSlide={activeSlide} />
@@ -95,18 +115,13 @@ function App() {
 
           <Carousel.Item>
             <section className="section">
-              <UX handleToggleExpansion={handleToggleExpansion} />
+              <UX
+                handleToggleExpansion={handleToggleExpansion}
+                zoomImage={zoomImage}
+              />
             </section>
           </Carousel.Item>
         </Carousel>
-        <InfoModal
-          infoRef={infoRef}
-          expandedItem={expandedItem}
-          codeLink={codeLink}
-          setExpandedItem={setExpandedItem}
-          title={title}
-          content={content}
-        />
       </div>
 
       {/*MOBILE PART */}
@@ -126,7 +141,10 @@ function App() {
           <div className="col-lg-8 offset-lg-2 col-10 offset-1">
             <h2 className="section-title">UX Portfolio</h2>
           </div>
-          <UX handleToggleExpansion={handleToggleExpansion} />
+          <UX
+            handleToggleExpansion={handleToggleExpansion}
+            zoomImage={zoomImage}
+          />
         </section>
 
         <section className="section-mobile">
@@ -142,15 +160,27 @@ function App() {
           </div>
           <Education />
         </section>
-        <InfoModal
-          infoRef={infoRef}
-          expandedItem={expandedItem}
-          codeLink={codeLink}
-          setExpandedItem={setExpandedItem}
-          title={title}
-          content={content}
-        />
       </div>
+      <InfoModal
+        ref={infoRef}
+        expandedItem={expandedItem}
+        codeLink={codeLink}
+        setExpandedItem={setExpandedItem}
+        title={title}
+        content={content}
+      />
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={slides}
+        zoom={{ ref: zoomRef, maxZoomPixelRatio: 3 }}
+        plugins={[Zoom]}
+        nextSrc={null}
+        prevSrc={null}
+        imageProps={{
+          draggable: false,
+        }}
+      />
     </div>
   );
 }

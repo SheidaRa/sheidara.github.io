@@ -318,6 +318,20 @@ h1 {
   text-align: center;
 }
 
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper img:hover {
+  cursor: pointer;
+}
+
+.yarl__button.yarl__navigation_next,
+.yarl__button.yarl__navigation_prev {
+  display: none;
+}
+
 /* Css for devices with a width inferior to 768px, so including mobile phones */
 @media (max-width: 768px) {
   .navbar {
@@ -325,7 +339,6 @@ h1 {
   }
 
   .infoModal {
-    margin-left: 3.6em;
     width: 26.6em;
   }
 
@@ -354,36 +367,31 @@ h1 {
 
 @media (max-width: 575px) {
   .infoModal {
-    margin-left: 10.6%;
     width: 79%;
   }
 }
 
 @media (min-width: 769px) {
   .infoModal {
-    margin-left: 0.8em;
     width: 43.5em;
   }
 }
 
 @media (min-width: 992px) {
   .infoModal {
-    margin-left: 10.7em;
     width: 38.6em;
   }
 }
 
 @media (min-width: 1200px) {
   .infoModal {
-    margin-left: 12.6em;
     width: 46em;
   }
 }
 
 @media (min-width: 1400px) {
   .infoModal {
-    margin-left: 13.7em;
-    width: 53.8em;
+    width: 53.5em;
   }
 }
 

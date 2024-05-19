@@ -7,7 +7,8 @@ import Circle from "../Writings/Circle";
 import Tetris from "../Writings/Tetris";
 import GogyUp from "../Writings/GogyUp";
 
-const UX = ({ handleToggleExpansion }) => {
+const UX = ({ handleToggleExpansion, zoomImage }) => {
+  const expandTitle = "Click to expand";
   return (
     <div className="row" style={{ position: "relative" }}>
       <div className="col-lg-4 offset-lg-2 col-10 offset-sm-1">
@@ -22,7 +23,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               1,
               "RTR",
-              <RTR />,
+              <RTR zoomImage={zoomImage} expandTitle={expandTitle} />,
               "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
             );
           }}
@@ -41,7 +42,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               2,
               "TouchChat",
-              <HCI />,
+              <HCI zoomImage={zoomImage} expandTitle={expandTitle} />,
               "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
             );
           }}
@@ -60,7 +61,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               3, //unique id
               "Circle", //project title
-              <Circle />, //writing
+              <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
               "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
             )
           }
@@ -79,7 +80,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               4,
               "Tetris",
-              <Tetris />,
+              <Tetris zoomImage={zoomImage} expandTitle={expandTitle} />,
               "https://www.figma.com/design/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?t=wFYlj9dELbKvbBWl-0"
             )
           }
@@ -98,7 +99,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               5,
               "GogyUp",
-              <GogyUp />,
+              <GogyUp zoomImage={zoomImage} expandTitle={expandTitle} />,
               "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
             )
           }
@@ -117,7 +118,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               6, //unique id
               "Exploring Emotions in VR", //project title
-              <Chroma />, //writing
+              <Chroma zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
               "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
             )
           }
@@ -135,7 +136,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               7,
               "TouchChat",
-              <HCI />,
+              <HCI zoomImage={zoomImage} expandTitle={expandTitle} />,
               "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
             );
           }}

@@ -4,7 +4,7 @@ import PortfolioCard from "../Components/PortfolioCard";
 const Development = () => {
   return (
     <div className="row">
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <PortfolioCard
           project={"Sign Language Recognizer"}
           tools={["Python", "Media Pipe"]}
@@ -13,7 +13,7 @@ const Development = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <PortfolioCard
           project={"Rate This Rental"}
           tools={["React", "Ruby", "Bootstrap", "Figma"]}
@@ -22,7 +22,7 @@ const Development = () => {
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <PortfolioCard
           project={"Tetris Puzzle App"}
           tools={["Swift", "XCode", "SpriteKit"]}
@@ -31,7 +31,7 @@ const Development = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <PortfolioCard
           project={"ChromaVR"}
           tools={["A-Frame", "JavaScript", "HTML"]}
@@ -39,7 +39,7 @@ const Development = () => {
           image={"images/projects/chroma.jpg"}
         />
       </div>
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <PortfolioCard
           project={"Online Portfolio"}
           tools={["React", "NextJS", "JavaScript"]}
@@ -47,7 +47,7 @@ const Development = () => {
           image={"images/projects/portfolio.png"}
         />
       </div>
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <PortfolioCard
           project={"Sudoku Solver"}
           tools={["Python", "Backtracking"]}
@@ -56,7 +56,7 @@ const Development = () => {
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <PortfolioCard
           project={"Fantasy Safe"}
           tools={["Java", "AndroidStudio"]}
@@ -65,7 +65,7 @@ const Development = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <PortfolioCard
           project={"Smart Mailbox"}
           tools={["Python", "RaspberryPi", "IoT"]}
@@ -74,7 +74,7 @@ const Development = () => {
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <PortfolioCard
           project={"My Planner Application"}
           tools={["Java"]}

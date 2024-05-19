@@ -10,7 +10,7 @@ import GogyUp from "../Writings/GogyUp";
 const UX = ({ handleToggleExpansion }) => {
   return (
     <div className="row" style={{ position: "relative" }}>
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-sm-1">
         <UXPortfolioCard
           project={"Rate This Rental"}
           tools={["Figma"]}
@@ -29,7 +29,7 @@ const UX = ({ handleToggleExpansion }) => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <UXPortfolioCard
           project={"TouchChat Application Redesign"}
           tools={["Figma"]}
@@ -48,7 +48,7 @@ const UX = ({ handleToggleExpansion }) => {
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <UXPortfolioCard
           project={"Circle Dating App Design"}
           tools={["Figma"]}
@@ -67,7 +67,7 @@ const UX = ({ handleToggleExpansion }) => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <UXPortfolioCard
           project={"Tetris Puzzle App"}
           tools={["Figma", "Canva"]}
@@ -86,7 +86,7 @@ const UX = ({ handleToggleExpansion }) => {
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <UXPortfolioCard
           project={"GogyUp Reader Redesign"}
           tools={["Canva"]}
@@ -105,7 +105,7 @@ const UX = ({ handleToggleExpansion }) => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <UXPortfolioCard
           project={"ChromaVR"}
           tools={["A-Frame", "JavaScript", "HTML"]}
@@ -123,7 +123,7 @@ const UX = ({ handleToggleExpansion }) => {
           }
         />
       </div>
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <UXPortfolioCard
           project={"Online Portfolio"}
           tools={["Figma"]}

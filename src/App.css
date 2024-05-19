@@ -346,6 +346,12 @@ h1 {
   }
 }
 
+@media (max-width: 991px) {
+  .offset-xsm-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
 @media (max-width: 575px) {
   .infoModal {
     margin-left: 10.6%;

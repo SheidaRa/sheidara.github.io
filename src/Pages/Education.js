@@ -4,7 +4,7 @@ import EducationCard from "../Components/EducationCard";
 const Education = () => {
   return (
     <div className="row">
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <EducationCard
           school={"Macalester College"}
           place={"United States of America"}
@@ -13,7 +13,7 @@ const Education = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <EducationCard
           school={"University of Bradford"}
           place={"United Kingdom"}
@@ -22,7 +22,7 @@ const Education = () => {
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <EducationCard
           school={"Li Po Chun Unted World College of Hong Kong"}
           place={"Hong Kong"}

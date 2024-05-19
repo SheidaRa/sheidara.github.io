@@ -14,6 +14,12 @@ import UXPortfolioCard from "./Components/UXPortfolioCard";
 import HCI from "./Writings/HCI";
 import Chroma from "./Writings/Chroma";
 import RTR from "./Writings/RTR";
+import Tetris from "./Writings/Tetris";
+import GogyUp from "./Writings/GogyUp";
+import GlowGirl from "./Writings/GlowGirl";
+import Circle from "./Writings/Circle";
+
+
 
 import { RxCross2 } from "react-icons/rx";
 
@@ -443,7 +449,7 @@ function App() {
                       handleToggleExpansion(
                         4,
                         "Tetris",
-                        //<Example />,
+                        <Tetris />,
                         "https://www.figma.com/design/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?t=wFYlj9dELbKvbBWl-0"
                       )
                     }

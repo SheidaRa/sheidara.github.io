@@ -118,13 +118,15 @@ const RTR = ({ zoomImage, expandTitle }) => {
           users.
         </li>
       </ul>
-      <img
-        src="images/Writings/RTRColor.png"
-        alt="Color Scheem"
-        title={expandTitle}
-        onClick={() => zoomImage("images/Writings/RTRColor.png")}
-      />
-      <p>Chosen Color Scheme</p>
+      <div className="img-wrapper">
+        <img
+          src="images/Writings/RTRColor.png"
+          alt="Color Scheem"
+          title={expandTitle}
+          onClick={() => zoomImage("images/Writings/RTRColor.png")}
+        />
+        <p>Chosen Color Scheme</p>
+      </div>
 
       <h3>User Interaction</h3>
       <p>

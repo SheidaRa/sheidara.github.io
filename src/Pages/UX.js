@@ -3,6 +3,9 @@ import UXPortfolioCard from "../Components/UXPortfolioCard";
 import RTR from "../Writings/RTR";
 import HCI from "../Writings/HCI";
 import Chroma from "../Writings/Chroma";
+import Circle from "../Writings/Circle";
+import Tetris from "../Writings/Tetris";
+import GogyUp from "../Writings/GogyUp";
 
 const UX = ({ handleToggleExpansion }) => {
   return (
@@ -57,7 +60,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               3, //unique id
               "Circle", //project title
-              //<Example />, writing
+              <Circle />, //writing
               "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
             )
           }
@@ -76,7 +79,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               4,
               "Tetris",
-              //<Example />,
+              <Tetris />,
               "https://www.figma.com/design/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?t=wFYlj9dELbKvbBWl-0"
             )
           }
@@ -95,7 +98,7 @@ const UX = ({ handleToggleExpansion }) => {
             handleToggleExpansion(
               5,
               "GogyUp",
-              //<Example />,
+              <GogyUp />,
               "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
             )
           }

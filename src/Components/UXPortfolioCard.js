@@ -14,24 +14,25 @@ const UXPortfolioCard = ({
   };
 
   return (
-    <div className="portfolio-card" onClick={handleToggleExpansion}>
-      <div className="portfolio-img" style={divStyle}>
-        <div className="portfolio-content">
-          <h3>{project}</h3>
-          <div className="tools">
-            {tools.map((tool, index) => (
-              <span key={index}>
-                <p>{tool}</p>
-              </span>
-            ))}
+    <>
+      <div className="portfolio-card" onClick={handleToggleExpansion}>
+        <div className="portfolio-img" style={divStyle}>
+          <div className="portfolio-content">
+            <h4> Read More... </h4>
           </div>
-          <a className="button" href={link} target="blank">
-            <span> View design File </span>
-            <FontAwesomeIcon icon={""} />
-          </a>
         </div>
       </div>
-    </div>
+      <div>
+        <h3>{project}</h3>
+        <div className="tools">
+          {tools.map((tool, index) => (
+            <span key={index}>
+              <p>{tool}</p>
+            </span>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -318,13 +318,13 @@ h1 {
   text-align: center;
 }
 
+.img-wrapper img {
+  cursor: pointer;
+}
+
 .page-wrapper {
   display: flex;
   justify-content: center;
-}
-
-.page-wrapper img:hover {
-  cursor: pointer;
 }
 
 .yarl__button.yarl__navigation_next,

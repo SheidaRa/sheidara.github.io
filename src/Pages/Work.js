@@ -4,7 +4,16 @@ import WorkCard from "../Components/WorkCard";
 const Work = () => {
   return (
     <div className="row">
-      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
+       <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
+        <WorkCard
+          experience={"Research Assistant"}
+          place={"Macalester College, MN"}
+          date={"Fepurary 2024 – Present"}
+          image={"https://www.computersciencedegreehub.com/wp-content/uploads/2023/07/shutterstock_2284126663-scaled.jpg"}
+        />
+      </div>
+
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <WorkCard
           experience={"Software Developer, UX Designer and Marketing Intern"}
           place={"Easy EMDR. MN"}
@@ -13,7 +22,7 @@ const Work = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-xsm-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <WorkCard
           experience={"Software Developer and UX Designer Intern"}
           place={"GogyUp Inc. MN "}
@@ -22,7 +31,7 @@ const Work = () => {
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <WorkCard
           experience={
             "Teaching Assistant for Algorithm Design & Analysis & Python"
@@ -33,16 +42,16 @@ const Work = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-xsm-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <WorkCard
           experience={"Digital Resources Center Lab Assistant"}
           place={"Macalester College, MN"}
-          date={" June 2022 - August 2022"}
+          date={" June 2022 - January 2024"}
           image={"images/places/drc.jpg"}
         />
       </div>
 
-      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <WorkCard
           experience={
             "Google Women Techmakers Ambassador & Student Developer Club Leader"
@@ -53,7 +62,7 @@ const Work = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-xsm-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <WorkCard
           experience={"Social Media Manager and Committee Member"}
           place={"United World College Iran National Committee, Remote"}
@@ -61,7 +70,7 @@ const Work = () => {
           image={"images/places/uwc.png"}
         />
       </div>
-      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
+      <div className="col-lg-4 col-10 offset-xsm-1">
         <WorkCard
           experience={"Resident Assistant"}
           place={"Macalester College, MN"}
@@ -70,7 +79,7 @@ const Work = () => {
         />
       </div>
 
-      <div className="col-lg-4 col-10 offset-xsm-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <WorkCard
           experience={"Student Government Diversity and Inclusion Officer"}
           place={"Macalester College, MN"}

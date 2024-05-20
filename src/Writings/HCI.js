@@ -1,17 +1,16 @@
 import React from "react";
+import ExpandableImage from "../Components/ExpandableImage";
 
 const HCI = ({ zoomImage, expandTitle }) => {
   return (
     <>
-      <div className="img-wrapper">
-        <img
-          src="images/projects/hci.jpg"
-          alt="Hi-fi prototype for an AAC device on a tablet"
-          title={expandTitle}
-          onClick={() => zoomImage("images/projects/hci.jpg")}
-        />
-        <p>A screen of our hi-fi prototype for an AAC device on tablet</p>
-      </div>
+      <ExpandableImage
+        path="images/projects/hci.jpg"
+        alt="Hi-fi prototype for an AAC device on a tablet"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="A screen of our hi-fi prototype for an AAC device on tablet"
+      />
 
       <h2>Overview</h2>
       <p>
@@ -36,18 +35,12 @@ const HCI = ({ zoomImage, expandTitle }) => {
 
       <h2>Our design process</h2>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qZaEy3_t1hMBsnAOo2Oc4g.png"
-          alt="Image depicting our design process"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qZaEy3_t1hMBsnAOo2Oc4g.png"
-            )
-          }
-        />
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qZaEy3_t1hMBsnAOo2Oc4g.png"
+        alt="Image depicting our design process"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+      />
 
       <h3>Artifact Analysis</h3>
       <p>
@@ -61,19 +54,13 @@ const HCI = ({ zoomImage, expandTitle }) => {
         with values in blue and value tensions in red:
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*r1vhdvJPPZxJC-lXP1Fevg.jpeg"
-          alt="Chart of values and value tensions for stakeholders"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*r1vhdvJPPZxJC-lXP1Fevg.jpeg"
-            )
-          }
-        />
-        <p>A chart of values and value tensions for stakeholders</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*r1vhdvJPPZxJC-lXP1Fevg.jpeg"
+        alt="Chart of values and value tensions for stakeholders"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="A chart of values and value tensions for stakeholders"
+      />
 
       <h3>Contextual Inquiry</h3>
       <p>
@@ -102,19 +89,13 @@ const HCI = ({ zoomImage, expandTitle }) => {
         some pain points that we noted from our panelists:
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Twbv_9NYDWarFg1LXQsWMg.png"
-          alt="Pain points from our four panelists"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Twbv_9NYDWarFg1LXQsWMg.png"
-            )
-          }
-        />
-        <p>Pain points from our four panelists</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Twbv_9NYDWarFg1LXQsWMg.png"
+        alt="Pain points from our four panelists"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Pain points from our four panelists"
+      />
 
       <h3>Affinity Diagramming</h3>
       <p>
@@ -124,18 +105,12 @@ const HCI = ({ zoomImage, expandTitle }) => {
         research in context and in relation to each other.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*_j3fs5-gz7lQ1ZdNcK8yzQ.png"
-          alt="Affinity diagramming"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*_j3fs5-gz7lQ1ZdNcK8yzQ.png"
-            )
-          }
-        />
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*_j3fs5-gz7lQ1ZdNcK8yzQ.png"
+        alt="Affinity diagramming"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+      />
 
       <h3>Affinity Diagramming</h3>
 
@@ -163,19 +138,13 @@ const HCI = ({ zoomImage, expandTitle }) => {
         like visually.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:750/format:webp/1*O9zIRfsTstwRnJCjsLWThg.png"
-          alt="Sketches for potential features"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:750/format:webp/1*O9zIRfsTstwRnJCjsLWThg.png"
-            )
-          }
-        />
-        <p>Sketches for potential features</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:750/format:webp/1*O9zIRfsTstwRnJCjsLWThg.png"
+        alt="Sketches for potential features"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Sketches for potential features"
+      />
 
       <h3>Paper Sketches</h3>
       <p>
@@ -201,22 +170,14 @@ const HCI = ({ zoomImage, expandTitle }) => {
         given our four potential features.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*9YYbeaIFcI1lRZNoO0kIGg.png"
-          alt="Our paper sketches — including the homepage, profile, and history screens"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*9YYbeaIFcI1lRZNoO0kIGg.png"
-            )
-          }
-        />
-        <p>
-          Our paper sketches — including the homepage, profile, and history
-          screens
-        </p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*9YYbeaIFcI1lRZNoO0kIGg.png"
+        alt="Our paper sketches — including the homepage, profile, and history screens"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Our paper sketches — including the homepage, profile, and history
+        screens"
+      />
 
       <h3>Hi-fi Prototyping</h3>
       <p>
@@ -231,38 +192,26 @@ const HCI = ({ zoomImage, expandTitle }) => {
         other interlocutor to wait.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
-          alt="Homepage with categories, access to history and wait buttons"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
-            )
-          }
-        />
-        <p>Homepage with categories, access to history and wait buttons</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
+        alt="Homepage with categories, access to history and wait buttons"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Homepage with categories, access to history and wait buttons"
+      />
 
       <p>
         The profile page allows customizing categories as well as app colors and
         icons.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
-          alt="Profile page with customizations"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
-            )
-          }
-        />
-        <p>Profile page with customizations</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
+        alt="Profile page with customizations"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Profile page with customizations"
+      />
 
       <p>
         Finally, we added a feature for saving recent conversations. This allows
@@ -270,19 +219,13 @@ const HCI = ({ zoomImage, expandTitle }) => {
         speak a full sentence without retyping.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
-          alt="History page with access to saved conversations"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
-            )
-          }
-        />
-        <p>History page with access to saved conversations</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
+        alt="History page with access to saved conversations"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="History page with access to saved conversations"
+      />
 
       <p>
         The Figma link for our project can be found{" "}
@@ -299,19 +242,13 @@ const HCI = ({ zoomImage, expandTitle }) => {
         Here is how the waiting feature would look like in a conversation:
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
-          alt="Storyboarding"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
-            )
-          }
-        />
-        <p>Storyboarding</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
+        alt="Storyboarding"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Storyboarding"
+      />
 
       <h3>Reflections</h3>
       <p>
@@ -360,36 +297,24 @@ const HCI = ({ zoomImage, expandTitle }) => {
         other interlocutor to wait.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
-            )
-          }
-        />
-        <p>Homepage with categories, access to history and wait buttons</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OquloEAKLl7td5M9kx8RgQ.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Homepage with categories, access to history and wait buttons"
+      />
 
       <p>
         The profile page allows customizing categories as well as app colors and
         icons.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
-            )
-          }
-        />
-        <p>Profile page with customizations</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Fd3PWI_JzXYOm6Bu3j8rlg.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Profile page with customizations"
+      />
 
       <p>
         Finally, we added a feature for saving recent conversations. This allows
@@ -397,18 +322,12 @@ const HCI = ({ zoomImage, expandTitle }) => {
         speak a full sentence without retyping.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
-            )
-          }
-        />
-        <p>History page with access to saved conversations</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:828/format:webp/1*LnPqe6HuR_HIAetDgCZPNA.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="History page with access to saved conversations"
+      />
 
       <p>The Figma link for our project can be found here.</p>
 
@@ -419,18 +338,12 @@ const HCI = ({ zoomImage, expandTitle }) => {
         Here is how the waiting feature would look like in a conversation:
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
-            )
-          }
-        />
-        <p>Storyboarding</p>
-      </div>
+      <ExpandableImage
+        path="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lrwFN75HQcbza8vdV0Rqew.png"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Storyboarding"
+      />
 
       <h3>Reflections</h3>
       <p>

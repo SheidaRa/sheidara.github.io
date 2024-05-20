@@ -1,4 +1,5 @@
 import React from "react";
+import ExpandableImage from "../Components/ExpandableImage";
 
 const RTR = ({ zoomImage, expandTitle }) => {
   return (
@@ -41,15 +42,13 @@ const RTR = ({ zoomImage, expandTitle }) => {
         wider user base.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="images/Writings/RTROthers.jpg"
-          alt="Competitor SreenShots"
-          title={expandTitle}
-          onClick={() => zoomImage("images/Writings/RTROthers.jpg")}
-        />
-        <p>Competitor Examples</p>
-      </div>
+      <ExpandableImage
+        path="images/Writings/RTROthers.jpg"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Competitor Examples"
+        alt="Competitor ScreenShots"
+      />
 
       <h3>Differentiation Strategy</h3>
       <p>
@@ -95,15 +94,13 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <div className="img-wrapper">
-        <img
-          src="images/Writings/RTRWF.jpg"
-          alt="Initial Wire Frames"
-          title={expandTitle}
-          onClick={() => zoomImage("images/Writings/RTRWF.jpg")}
-        />
-        <p>Initial Wire Frames</p>
-      </div>
+      <ExpandableImage
+        path="images/Writings/RTRWF.jpg"
+        alt="Initial Wire Frames"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Initial Wire Frames"
+      />
 
       <h3>Color Scheme</h3>
       <p>
@@ -118,15 +115,14 @@ const RTR = ({ zoomImage, expandTitle }) => {
           users.
         </li>
       </ul>
-      <div className="img-wrapper">
-        <img
-          src="images/Writings/RTRColor.png"
-          alt="Color Scheem"
-          title={expandTitle}
-          onClick={() => zoomImage("images/Writings/RTRColor.png")}
-        />
-        <p>Chosen Color Scheme</p>
-      </div>
+
+      <ExpandableImage
+        path="images/Writings/RTRColor.png"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Chosen Color Scheme"
+        alt="Color Scheme"
+      />
 
       <h3>User Interaction</h3>
       <p>

@@ -30,7 +30,6 @@ function App() {
   //Close info window when click outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
-      console.log(event.target);
       if (
         infoRef.current &&
         !infoRef.current.contains(event.target) &&
@@ -175,11 +174,6 @@ function App() {
         slides={slides}
         zoom={{ ref: zoomRef, maxZoomPixelRatio: 3 }}
         plugins={[Zoom]}
-        nextSrc={null}
-        prevSrc={null}
-        imageProps={{
-          draggable: false,
-        }}
       />
     </div>
   );

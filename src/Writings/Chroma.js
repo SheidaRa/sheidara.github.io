@@ -1,4 +1,5 @@
 import React from "react";
+import ExpandableImage from "../Components/ExpandableImage";
 
 const Chroma = ({ zoomImage, expandTitle }) => {
   return (
@@ -79,21 +80,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
         chosen by the user.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*Zd3kYicjBs1-UwjKO5Ez4g.gif"
-          alt=" a gif of scketches made while rainstorming session in Idea Lab "
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*Zd3kYicjBs1-UwjKO5Ez4g.gif"
-            )
-          }
-        />
-        <p>
-          <strong>Brainstorming session </strong>
-        </p>
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*Zd3kYicjBs1-UwjKO5Ez4g.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Brainstorming session"
+        alt="a gif of scketches made while rainstorming session in Idea Lab"
+      />
 
       <p>
         To explore the effect of color on user experience, we decided to create
@@ -126,19 +119,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
         and sky were to turn red, it would evoke an entirely different feeling.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*ajHoszWv9-EXQfBEbOQ-zA.png"
-          alt=" A Photo of a Emotional Color Wheel"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*ajHoszWv9-EXQfBEbOQ-zA.png"
-            )
-          }
-        />
-        <p>Emotional Color Wheel(Source: Lindly's Blog)</p>
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*ajHoszWv9-EXQfBEbOQ-zA.png"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Emotional Color Wheel(Source: Lindly's Blog)"
+        alt="A Photo of a Emotional Color Wheel"
+      />
 
       <ul>
         <li>Red: Anger, embarrassment, passion, or lust.</li>
@@ -158,21 +145,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
         would be placed in between the two portals for ease of access.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*vI0pa9ZcGEv2fa_C-oK-fA.png"
-          alt="Brainstorming session scketche"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*vI0pa9ZcGEv2fa_C-oK-fA.png"
-            )
-          }
-        />
-        <p>
-          <strong>Brainstorming session</strong>
-        </p>
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*vI0pa9ZcGEv2fa_C-oK-fA.png"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Brainstorming session"
+        alt="Brainstorming session scketche"
+      />
 
       <p>
         After completing our sketches, we utilized 3D models from Sketchfab to
@@ -229,21 +208,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
         over file loading.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*S-FwLV2zqFV9guqukSpWdw.gif"
-          alt=" A gif of 3D models for the main room "
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*S-FwLV2zqFV9guqukSpWdw.gif"
-            )
-          }
-        />
-        <p>
-          <strong>3D models for the main room</strong>
-        </p>
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*S-FwLV2zqFV9guqukSpWdw.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="3D models for the main room"
+        alt="A gif of 3D models for the main room"
+      />
 
       <p>
         Our user tests revealed that the main room needed improvements to serve
@@ -269,21 +240,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
         HCI project.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*MBlKvnf2Tb7h4ReQeqVnlQ.gif"
-          alt=" A gif of rainstorming session of danger room sketches"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*MBlKvnf2Tb7h4ReQeqVnlQ.gif"
-            )
-          }
-        />
-        <p>
-          <strong>Brainstorming session of danger room sketches</strong>
-        </p>
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*MBlKvnf2Tb7h4ReQeqVnlQ.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Brainstorming session of danger room sketches"
+        alt="A gif of rainstorming session of danger room sketches"
+      />
 
       <p>
         One issue we encountered in user testing was that the main attraction –
@@ -296,21 +259,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
         user. It did its job, but there was some room for improvement.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*gfsuBzJ2dzi_oTUOgMBh1A.gif"
-          alt=" A gif of 3D models for the danger room "
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*gfsuBzJ2dzi_oTUOgMBh1A.gif"
-            )
-          }
-        />
-        <p>
-          <strong>3D models for the danger room</strong>
-        </p>
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*gfsuBzJ2dzi_oTUOgMBh1A.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="3D models for the danger room"
+        alt="A gif of 3D models for the danger room"
+      />
 
       <h4>Calm room</h4>
 
@@ -326,21 +281,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
         threatening.
       </p>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*tqd56mLp8tJVCk5kRAv7hg.gif"
-          alt=" A gif of 3D models for the calm room"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*tqd56mLp8tJVCk5kRAv7hg.gif"
-            )
-          }
-        />
-        <p>
-          <strong>3D models for the calm room</strong>
-        </p>
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*tqd56mLp8tJVCk5kRAv7hg.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="3D models for the calm room"
+        alt="A gif of 3D models for the calm room"
+      />
 
       <p>
         In user testing, we found that many players wanted more freedom in the
@@ -354,18 +301,12 @@ const Chroma = ({ zoomImage, expandTitle }) => {
 
       <h2>User Testing – General Notes and Method</h2>
 
-      <div className="img-wrapper">
-        <img
-          src="https://cdn-images-1.medium.com/max/1200/1*zuid3YSbaeDkpT19971w_w.gif"
-          alt=" A gif ofUser testing session in library"
-          title={expandTitle}
-          onClick={() =>
-            zoomImage(
-              "https://cdn-images-1.medium.com/max/1200/1*zuid3YSbaeDkpT19971w_w.gif"
-            )
-          }
-        />
-      </div>
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*zuid3YSbaeDkpT19971w_w.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        alt="A gif ofUser testing session in library"
+      />
 
       <p>
         Once we resolved the technical issues with our project, we conducted
@@ -391,19 +332,13 @@ const Chroma = ({ zoomImage, expandTitle }) => {
 
       <h3>User Test</h3>
 
-      <img
-        src="https://cdn-images-1.medium.com/max/1200/1*wwA7PtDlm-8MHiRB9fuKbQ.gif"
-        alt=" A gif ofUser testing session in library"
-        title={expandTitle}
-        onClick={() =>
-          zoomImage(
-            "https://cdn-images-1.medium.com/max/1200/1*wwA7PtDlm-8MHiRB9fuKbQ.gif"
-          )
-        }
+      <ExpandableImage
+        path="https://cdn-images-1.medium.com/max/1200/1*wwA7PtDlm-8MHiRB9fuKbQ.gif"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        alt="A gif of User testing session in library"
+        caption="User testing session"
       />
-      <p>
-        <strong>User testing session</strong>
-      </p>
 
       <p>
         Users had varying emotional experiences depending on the color of the

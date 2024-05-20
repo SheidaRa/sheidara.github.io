@@ -234,7 +234,7 @@ h1 {
 }
 
 .portfolio-img:hover:before {
-  height: 100%;
+  height: 30%;
 }
 
 .portfolio-content {
@@ -422,16 +422,9 @@ h1 {
   display: flex;
 }
 
-.tools span {
-  background-color: var(--button-hover-bg-color);
-  padding: 0.6em;
-  border-radius: 25px;
-  margin-right: 1em;
-  margin-bottom: 0.5em;
-  min-width: 55px;
-  text-align: center;
-}
-
 .tools span p {
-  margin: 0;
+  font-size: 17px;
+  color: var(--main-color);
+  font-weight: 500;
+  margin-right: 0.5em;
 }

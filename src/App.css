@@ -237,10 +237,6 @@ h1 {
   );
 }
 
-.portfolio-img:hover:before {
-  height: 30%;
-}
-
 .portfolio-content {
   padding: 1em;
   opacity: 0;

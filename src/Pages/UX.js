@@ -131,7 +131,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           link={
             "https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1"
           }
-          image={"images/projects/portfolio.png"}
+          image={"images/projects/portfolio.jpg"}
           handleToggleExpansion={() => {
             handleToggleExpansion(
               7,
@@ -140,6 +140,24 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
               "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
             );
           }}
+        />
+      </div>
+      <div className="col-lg-4 col-10 offset-xsm-1">
+        <UXPortfolioCard
+          project={"Glow Girl"}
+          tools={["Figma"]}
+          link={
+            "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810"
+          }
+          image={"images/projects/Glowgirl.jpg"}
+          handleToggleExpansion={() =>
+            handleToggleExpansion(
+              8, //unique id
+              "Exploring Emotions in VR", //project title
+              <Chroma zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
+              "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
+            )
+          }
         />
       </div>
     </div>

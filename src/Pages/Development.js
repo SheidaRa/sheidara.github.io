@@ -9,7 +9,7 @@ const Development = () => {
           project={"Sign Language Recognizer"}
           tools={["Python", "Media Pipe"]}
           link={"https://github.com/SheidaRa"}
-          image={"images/projects/hand.png"}
+          image={"images/projects/SLR.jpg"}
         />
       </div>
 
@@ -44,7 +44,7 @@ const Development = () => {
           project={"Online Portfolio"}
           tools={["React", "NextJS", "JavaScript"]}
           link={"https://github.com/SheidaRa/SheidaRa.github.io"}
-          image={"images/projects/portfolio.png"}
+          image={"images/projects/portfolio.jpg"}
         />
       </div>
       <div className="col-lg-4 col-10 offset-xsm-1">

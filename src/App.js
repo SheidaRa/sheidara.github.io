@@ -35,7 +35,9 @@ function App() {
         !infoRef.current.contains(event.target) &&
         !event.target.classList.contains("yarl__icon") &&
         !event.target.classList.contains("yarl__button") &&
-        event.target.tagName.toLowerCase() !== "path"
+        event.target.tagName.toLowerCase() !== "path" &&
+        !event.target.classList.contains("yarl__fullsize") &&
+        !event.target.classList.contains("yarl__slide_image")
       ) {
         setExpandedItem(0);
       }

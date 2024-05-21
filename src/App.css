@@ -233,6 +233,7 @@ h1 {
   width: 100%;
   bottom: 0;
   transition: height 0.3s ease-out;
+  border-radius: 10px;
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,

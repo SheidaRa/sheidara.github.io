@@ -15,6 +15,8 @@ import AboutMobile from "./Pages/AboutMobile";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import "yet-another-react-lightbox/plugins/captions.css";
 
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -37,7 +39,9 @@ function App() {
         !event.target.classList.contains("yarl__button") &&
         event.target.tagName.toLowerCase() !== "path" &&
         !event.target.classList.contains("yarl__fullsize") &&
-        !event.target.classList.contains("yarl__slide_image")
+        !event.target.classList.contains("yarl__slide_image") &&
+        !event.target.classList.contains("yarl__slide_title") &&
+        !event.target.classList.contains("yarl__slide_captions_container")
       ) {
         setExpandedItem(0);
       }
@@ -71,9 +75,9 @@ function App() {
     }
   };
 
-  const zoomImage = (path) => {
+  const zoomImage = (path, caption) => {
     setOpen(true);
-    setSlides([{ src: path }]);
+    setSlides([{ src: path, title: caption }]);
   };
 
   return (
@@ -175,7 +179,7 @@ function App() {
         close={() => setOpen(false)}
         slides={slides}
         zoom={{ ref: zoomRef, maxZoomPixelRatio: 3 }}
-        plugins={[Zoom]}
+        plugins={[Zoom, Captions]}
       />
     </div>
   );

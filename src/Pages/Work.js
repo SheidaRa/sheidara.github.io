@@ -8,7 +8,7 @@ const Work = () => {
         <WorkCard
           experience={"Research Assistant"}
           place={"Macalester College, MN"}
-          date={"Fepurary 2024 – Present"}
+          date={"February 2024 – Present"}
           image={"https://www.computersciencedegreehub.com/wp-content/uploads/2023/07/shutterstock_2284126663-scaled.jpg"}
         />
       </div>
@@ -26,7 +26,7 @@ const Work = () => {
         <WorkCard
           experience={"Software Developer and UX Designer Intern"}
           place={"GogyUp Inc. MN "}
-          date={" June 2022 - August 2022"}
+          date={"June 2022 - August 2022"}
           image={"images/places/gogyup.png"}
         />
       </div>
@@ -37,7 +37,7 @@ const Work = () => {
             "Teaching Assistant for Algorithm Design & Analysis & Python"
           }
           place={"Macalester College, MN"}
-          date={" January 2022 – May 2023"}
+          date={"January 2022 – May 2023"}
           image={"images/schools/Mac.jpg"}
         />
       </div>
@@ -46,7 +46,7 @@ const Work = () => {
         <WorkCard
           experience={"Digital Resources Center Lab Assistant"}
           place={"Macalester College, MN"}
-          date={" June 2022 - January 2024"}
+          date={"June 2022 - January 2024"}
           image={"images/places/drc.jpg"}
         />
       </div>
@@ -57,7 +57,7 @@ const Work = () => {
             "Google Women Techmakers Ambassador & Student Developer Club Leader"
           }
           place={"Macalester College, MN"}
-          date={" July 2022 – Present"}
+          date={"July 2022 – Present"}
           image={"images/places/google.png"}
         />
       </div>
@@ -66,7 +66,7 @@ const Work = () => {
         <WorkCard
           experience={"Social Media Manager and Committee Member"}
           place={"United World College Iran National Committee, Remote"}
-          date={" December 2020 – Present"}
+          date={"December 2020 – Present"}
           image={"images/places/uwc.png"}
         />
       </div>
@@ -74,7 +74,7 @@ const Work = () => {
         <WorkCard
           experience={"Resident Assistant"}
           place={"Macalester College, MN"}
-          date={" January 2022 – May 23"}
+          date={"January 2022 – May 23"}
           image={"images/places/dorm.jpg"}
         />
       </div>

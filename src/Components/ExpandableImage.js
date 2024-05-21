@@ -7,7 +7,7 @@ const ExpandableImage = ({ path, alt, caption, zoomImage, expandTitle }) => {
         src={path}
         alt={alt}
         title={expandTitle}
-        onClick={() => zoomImage(path)}
+        onClick={() => zoomImage(path, caption)}
       />
       {caption && <p>{caption}</p>}
     </div>

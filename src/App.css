@@ -59,14 +59,9 @@ h1 {
   width: 90%;
   height: 90%;
 
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 212, 255, 0) 0%
-    ),
-    url("../public/images/shapes.gif");
+  background: url("../public/images/shapes.gif");
   background-size: cover;
+  background-position: center;
 }
 
 .nav-button {

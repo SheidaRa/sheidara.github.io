@@ -356,6 +356,7 @@ h1 {
 
   .portfolio-img:before {
     height: 40%;
+    border-radius: 10px;
   }
 }
 
@@ -378,6 +379,7 @@ h1 {
 
   .portfolio-img:hover:before {
     height: 40%;
+    border-radius: 10px;
   }
 }
 

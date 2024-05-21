@@ -11,7 +11,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
   const expandTitle = "Click to expand";
   return (
     <div className="row" style={{ position: "relative" }}>
-      <div className="col-lg-4 offset-lg-2 col-10 offset-sm-1">
+      <div className="col-lg-4 offset-lg-2 col-10 offset-xsm-1">
         <UXPortfolioCard
           project={"Rate This Rental"}
           tools={["Figma"]}

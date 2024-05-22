@@ -6,7 +6,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
     <>
       {/* <h1>Project Overview: Rate Your Landlord Web Application</h1> */}
 
-      <h2>Introduction</h2>
+      <h3>Introduction</h3>
       <p>
         The "Rate Your Landlord" website is a community-driven platform designed
         to empower renters by enabling them to share their experiences with
@@ -15,9 +15,9 @@ const RTR = ({ zoomImage, expandTitle }) => {
         rentals, fostering better relationships between landlords and tenants.
       </p>
 
-      <h2>Key Steps in the Design Process</h2>
+      <h3>Key Steps in the Design Process</h3>
 
-      <h3>Competitor Research</h3>
+      <h4>Competitor Research</h4>
       <p>
         We initiated our project with a comprehensive analysis of existing
         competitors in the rental review market. Our findings highlighted
@@ -50,7 +50,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         alt="Competitor ScreenShots"
       />
 
-      <h3>Differentiation Strategy</h3>
+      <h4>Differentiation Strategy</h4>
       <p>
         Our differentiation strategy focused on incorporating innovative
         features that set our platform apart:
@@ -72,9 +72,9 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h2>Main Design Decisions</h2>
+      <h3>Main Design Decisions</h3>
 
-      <h3>Simplicity</h3>
+      <h4>Simplicity</h4>
       <p>
         We prioritized simplicity in our design to ensure a user-friendly
         experience:
@@ -102,7 +102,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         caption="Initial Wire Frames"
       />
 
-      <h3>Color Scheme</h3>
+      <h4>Color Scheme</h4>
       <p>
         Selecting the right color scheme was crucial to convey trust and
         professionalism:
@@ -124,7 +124,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         alt="Color Scheme"
       />
 
-      <h3>User Interaction</h3>
+      <h4>User Interaction</h4>
       <p>
         Ensuring that key actions were prominently displayed and easily
         accessible was essential:
@@ -138,7 +138,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h2>Role & Responsibilities</h2>
+      <h3>Role & Responsibilities</h3>
       <p>
         As the main UX/UI designer and front-end developer, I played a central
         role in every stage of the design and development process. My
@@ -167,7 +167,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h2>User Research</h2>
+      <h3>User Research</h3>
       <p>
         Our user research involved extensive methods to gather insights into the
         needs, preferences, and pain points of our target audience:
@@ -189,9 +189,9 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h2>Design Iterations</h2>
+      <h3>Design Iterations</h3>
 
-      <h3>Initial Concepts</h3>
+      <h4>Initial Concepts</h4>
       <p>
         We explored various design concepts through sketches, paper wireframes,
         and digital prototypes:
@@ -209,7 +209,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h3>High-Fidelity Mockups</h3>
+      <h4>High-Fidelity Mockups</h4>
       <p>
         We developed high-fidelity mockups and prototypes to visualize the final
         product:
@@ -229,7 +229,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h2>Usability Testing</h2>
+      <h3>Usability Testing</h3>
       <p>
         Usability testing was a critical step to ensure our design met user
         expectations:
@@ -249,7 +249,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h2>Final Designs</h2>
+      <h3>Final Designs</h3>
       <p>
         Incorporating feedback from usability testing, we made final adjustments
         and refinements to the designs:
@@ -275,7 +275,7 @@ const RTR = ({ zoomImage, expandTitle }) => {
         </li>
       </ul>
 
-      <h2>Reflections</h2>
+      <h3>Reflections</h3>
       <p>
         Our project provided valuable lessons in design and user experience:
       </p>

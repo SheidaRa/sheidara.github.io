@@ -289,8 +289,29 @@ h1 {
   width: auto;
   height: 100%;
   object-fit: cover;
-  max-width: 80%;
+  max-width: 65%;
   border-radius: 15px;
+}
+
+.infoModal h2 {
+  color:#25438F;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+}
+
+.infoModal h3 {
+  color:#25438F;
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 0.5em;
+  padding-top: 0.3em;
+
+}
+.infoModal h4 {
+  color:#;
+  font-weight: 550;
+  font-size: 20px;
+  padding-bottom: 0.2em;
 }
 
 .cardContentHeader {

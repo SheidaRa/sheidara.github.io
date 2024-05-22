@@ -93,6 +93,7 @@ const Work = () => {
             image={"images/places/mcsg.png"}
           />
         </div>
+        <div className="col-lg-5"></div>
       </div>
     </div>
   );

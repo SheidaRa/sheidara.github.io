@@ -86,6 +86,7 @@ const Development = () => {
             image={"images/projects/planner.png"}
           />
         </div>
+        <div className="col-lg-5"></div>
       </div>
     </div>
   );

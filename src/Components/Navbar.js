@@ -4,7 +4,7 @@ const Navbar = ({ handleSlideClick, activeSlide }) => {
   return (
     <nav className="navbar fixed-top navbar-expand-lg">
       <div className="container">
-        <div id="scrollspy1" className="sticky-top col-lg-8 offset-lg-2">
+        <div id="scrollspy1" className="sticky-top col-lg-10 offset-lg-1">
           <ul className="nav menu-sidebar ps-2">
             <li className="nav-item">
               <a

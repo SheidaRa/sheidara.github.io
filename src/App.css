@@ -374,7 +374,7 @@ h1 {
 
 @media (min-width: 769px) {
   .infoModal {
-    width: 43.5em;
+    width: 42em;
   }
 
   .portfolio-img:hover:before {
@@ -385,19 +385,19 @@ h1 {
 
 @media (min-width: 992px) {
   .infoModal {
-    width: 38.6em;
+    width: 47em;
   }
 }
 
 @media (min-width: 1200px) {
   .infoModal {
-    width: 46em;
+    width: 55em;
   }
 }
 
 @media (min-width: 1400px) {
   .infoModal {
-    width: 53.5em;
+    width: 65em;
   }
 }
 

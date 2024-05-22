@@ -18,7 +18,7 @@ const UXPortfolioCard = ({
       <div className="portfolio-card" onClick={handleToggleExpansion}>
         <div className="portfolio-img" style={divStyle}>
           <div className="portfolio-content">
-            <h4> Read More... </h4>
+            <h4> Design and More... </h4>
           </div>
         </div>
       </div>

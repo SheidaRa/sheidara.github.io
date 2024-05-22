@@ -314,6 +314,13 @@ h1 {
   padding-bottom: 0.2em;
 }
 
+.infoModal .button{
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+
+}
+
 .cardContentHeader {
   display: flex;
   flex-direction: row;

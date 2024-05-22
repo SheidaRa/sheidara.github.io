@@ -11,8 +11,8 @@ const InfoModal = forwardRef(
         }`}
       >
         <div className="cardContentHeader">
-          <a className="codeButton" href={codeLink} target="blank">
-          View Figma File
+          <a className="button" href={codeLink} target="blank">
+           Figma File
           </a>
           <RxCross2 onClick={() => setExpandedItem(0)} className="closeIcon" />
         </div>

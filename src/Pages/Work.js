@@ -5,10 +5,9 @@ const Work = () => {
   return (
     <div className="col-lg-10 offset-lg-1">
       <div
-        className="row"
-        style={{ position: "relative", justifyContent: "space-evenly" }}
+        className="row section-wrapper"
       >
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Research Assistant"}
             place={"Macalester College, MN"}
@@ -19,7 +18,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Software Developer, UX Designer and Marketing Intern"}
             place={"Easy EMDR. MN"}
@@ -28,7 +27,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Software Developer and UX Designer Intern"}
             place={"GogyUp Inc. MN "}
@@ -37,7 +36,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={
               "Teaching Assistant for Algorithm Design & Analysis & Python"
@@ -48,7 +47,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Digital Resources Center Lab Assistant"}
             place={"Macalester College, MN"}
@@ -57,7 +56,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={
               "Google Women Techmakers Ambassador & Student Developer Club Leader"
@@ -68,7 +67,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Social Media Manager and Committee Member"}
             place={"United World College Iran National Committee, Remote"}
@@ -76,7 +75,7 @@ const Work = () => {
             image={"images/places/uwc.png"}
           />
         </div>
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Resident Assistant"}
             place={"Macalester College, MN"}
@@ -85,7 +84,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Student Government Diversity and Inclusion Officer"}
             place={"Macalester College, MN"}
@@ -93,7 +92,7 @@ const Work = () => {
             image={"images/places/mcsg.png"}
           />
         </div>
-        <div className="col-lg-5"></div>
+        <div className="col-lg-5 col-md-6"></div>
       </div>
     </div>
   );

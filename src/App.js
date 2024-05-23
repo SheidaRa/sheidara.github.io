@@ -4,14 +4,13 @@ import "./App.css";
 import { useState, useEffect, useRef } from "react";
 import "bootstrap/js/src/scrollspy.js";
 import Carousel from "react-bootstrap/Carousel";
-import Navbar from "./Components/Navbar";
+import CustomNavbar from "./Components/CustomNavbar";
 import AboutDesktop from "./Pages/AboutDesktop";
 import Work from "./Pages/Work";
 import Development from "./Pages/Development";
 import UX from "./Pages/UX";
 import InfoModal from "./Components/InfoModal";
 import Education from "./Pages/Education";
-import AboutMobile from "./Pages/AboutMobile";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -25,6 +24,9 @@ function App() {
   const [slides, setSlides] = useState([]);
 
   const zoomRef = useRef(null);
+
+  const [expanded, setExpanded] = useState(false)
+  const ignoreScrollEvents = useRef(false);
 
   //info window ref
   const infoRef = useRef(null);
@@ -44,6 +46,15 @@ function App() {
         !event.target.classList.contains("yarl__slide_captions_container")
       ) {
         setExpandedItem(0);
+      }
+      if (
+        !event.target.classList.contains(["navbar-nav"]) &&
+        !event.target.classList.contains("burger") &&
+        !event.target.classList.contains("nav-container") &&
+        !event.target.classList.contains("nav-link") &&
+        !event.target.classList.contains("nav-brand")
+      ) {
+        setExpanded(false)
       }
     };
 
@@ -80,12 +91,29 @@ function App() {
     setSlides([{ src: path, title: caption }]);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (ignoreScrollEvents.current) {
+        return;
+      }
+      setExpanded(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <div className="page-wrapper">
-      {/* DESKTOP PART */}
-      <div className="container desktop">
-        <Navbar handleSlideClick={handleSlideClick} activeSlide={activeSlide} />
-
+      <CustomNavbar expanded={expanded} handleToggle={handleToggle} handleSlideClick={handleSlideClick} activeSlide={activeSlide} />
+      <div className="container">
         <Carousel
           interval={null}
           activeIndex={activeSlide}
@@ -93,6 +121,7 @@ function App() {
           fade={true}
           controls={false}
           indicators={false}
+          touch={false}
         >
           <Carousel.Item>
             <section className="section">
@@ -129,43 +158,7 @@ function App() {
         </Carousel>
       </div>
 
-      {/*MOBILE PART */}
-      <div className="container mobile">
-        <section className="section-center">
-          <AboutMobile />
-        </section>
-
-        <section className="section-mobile">
-          <div className="col-lg-8 offset-lg-2 col-10 offset-1">
-            <h2 className="section-title">Development Portfolio</h2>
-          </div>
-          <Development />
-        </section>
-
-        <section className="section-mobile">
-          <div className="col-lg-8 offset-lg-2 col-10 offset-1">
-            <h2 className="section-title">UX Portfolio</h2>
-          </div>
-          <UX
-            handleToggleExpansion={handleToggleExpansion}
-            zoomImage={zoomImage}
-          />
-        </section>
-
-        <section className="section-mobile">
-          <div className="col-lg-8 offset-lg-2 col-10 offset-1">
-            <h2 className="section-title">Work Experience</h2>
-          </div>
-          <Work />
-        </section>
-
-        <section className="section-mobile">
-          <div className="col-lg-8 offset-lg-2 col-10 offset-1">
-            <h2 className="section-title">Education</h2>
-          </div>
-          <Education />
-        </section>
-      </div>
+      {/* Pop up window */}
       <InfoModal
         ref={infoRef}
         expandedItem={expandedItem}
@@ -174,6 +167,7 @@ function App() {
         title={title}
         content={content}
       />
+      {/* Component for expanded images */}
       <Lightbox
         open={open}
         close={() => setOpen(false)}

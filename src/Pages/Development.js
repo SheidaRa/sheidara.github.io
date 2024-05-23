@@ -5,10 +5,9 @@ const Development = () => {
   return (
     <div className="col-lg-10 offset-lg-1">
       <div
-        className="row"
-        style={{ position: "relative", justifyContent: "space-evenly" }}
+        className="row section-wrapper"
       >
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"Sign Language Recognizer"}
             tools={["Python", "Media Pipe"]}
@@ -17,7 +16,7 @@ const Development = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"Rate This Rental"}
             tools={["React", "Ruby", "Bootstrap", "Figma"]}
@@ -26,7 +25,7 @@ const Development = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"Tetris Puzzle App"}
             tools={["Swift", "XCode", "SpriteKit"]}
@@ -35,7 +34,7 @@ const Development = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"ChromaVR"}
             tools={["A-Frame", "JavaScript", "HTML"]}
@@ -43,7 +42,7 @@ const Development = () => {
             image={"images/projects/chroma.jpg"}
           />
         </div>
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"Online Portfolio"}
             tools={["React", "NextJS", "JavaScript"]}
@@ -51,7 +50,7 @@ const Development = () => {
             image={"images/projects/portfolio.jpg"}
           />
         </div>
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"Sudoku Solver"}
             tools={["Python", "Backtracking"]}
@@ -60,7 +59,7 @@ const Development = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"Fantasy Safe"}
             tools={["Java", "AndroidStudio"]}
@@ -69,7 +68,7 @@ const Development = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"Smart Mailbox"}
             tools={["Python", "RaspberryPi", "IoT"]}
@@ -78,7 +77,7 @@ const Development = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <PortfolioCard
             project={"My Planner Application"}
             tools={["Java"]}
@@ -86,7 +85,7 @@ const Development = () => {
             image={"images/projects/planner.png"}
           />
         </div>
-        <div className="col-lg-5"></div>
+        <div className="col-lg-5 col-md-6"></div>
       </div>
     </div>
   );

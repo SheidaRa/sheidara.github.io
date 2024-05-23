@@ -12,10 +12,9 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
   return (
     <div className="col-lg-10 offset-lg-1">
       <div
-        className="row"
-        style={{ position: "relative", justifyContent: "space-evenly" }}
+        className="row section-wrapper"
       >
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Rate This Rental"}
             tools={["Figma"]}
@@ -34,7 +33,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"TouchChat Application Redesign"}
             tools={["Figma"]}
@@ -53,7 +52,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Circle Dating App Design"}
             tools={["Figma"]}
@@ -72,7 +71,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Tetris Puzzle App"}
             tools={["Figma", "Canva"]}
@@ -91,7 +90,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"GogyUp Reader Redesign"}
             tools={["Canva"]}
@@ -110,7 +109,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           />
         </div>
 
-        <div className="col-lg-5 offset-lg-1 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"ChromaVR"}
             tools={["A-Frame", "JavaScript", "HTML"]}
@@ -128,7 +127,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
             }
           />
         </div>
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Online Portfolio"}
             tools={["Figma"]}
@@ -146,7 +145,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
             }}
           />
         </div>
-        <div className="col-lg-5 offset-lg-1  col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Glow Girl"}
             tools={["Figma"]}

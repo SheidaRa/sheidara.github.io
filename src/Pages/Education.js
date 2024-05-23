@@ -5,10 +5,9 @@ const Education = () => {
   return (
     <div className="col-lg-10 offset-lg-1">
       <div
-        className="row"
-        style={{ position: "relative", justifyContent: "space-evenly" }}
+        className="row section-wrapper"
       >
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <EducationCard
             school={"Macalester College"}
             place={"United States of America"}
@@ -17,7 +16,7 @@ const Education = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <EducationCard
             school={"University of Bradford"}
             place={"United Kingdom"}
@@ -26,7 +25,7 @@ const Education = () => {
           />
         </div>
 
-        <div className="col-lg-5 col-10 offset-xsm-1">
+        <div className="col-lg-5 col-md-6">
           <EducationCard
             school={"Li Po Chun United World College of Hong Kong"}
             place={"Hong Kong"}
@@ -34,7 +33,7 @@ const Education = () => {
             image={"images/schools/LPC.jpeg"}
           />
         </div>
-        <div className="col-lg-5"></div>
+        <div className="col-lg-5 col-md-6"></div>
       </div>
     </div>
   );

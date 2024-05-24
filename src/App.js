@@ -18,15 +18,19 @@ import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
 
 function App() {
+  //active page
   const [activeSlide, setActiveSlide] = useState(0);
 
+  //lightbox
   const [open, setOpen] = useState(false);
   const [slides, setSlides] = useState([]);
 
+  //expanded image zoom
   const zoomRef = useRef(null);
 
+  //burger menu
   const [expanded, setExpanded] = useState(false)
-  const ignoreScrollEvents = useRef(false);
+  const navbarRef = useRef(null)
 
   //info window ref
   const infoRef = useRef(null);
@@ -48,7 +52,7 @@ function App() {
         setExpandedItem(0);
       }
       if (
-        !event.target.classList.contains(["navbar-nav"]) &&
+        !event.target.classList.contains("navbar-nav") &&
         !event.target.classList.contains("burger") &&
         !event.target.classList.contains("nav-container") &&
         !event.target.classList.contains("nav-link") &&
@@ -65,8 +69,13 @@ function App() {
     };
   }, []);
 
+  //Change page on nav-link click
   const handleSlideClick = (slideIndex) => {
     setActiveSlide(slideIndex);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
   };
 
   const [expandedItem, setExpandedItem] = useState(0);
@@ -75,6 +84,7 @@ function App() {
   const [content, setContent] = useState("");
   const [codeLink, setCodeLink] = useState("");
 
+  //Handle pop up window on card click
   const handleToggleExpansion = (id, title, content, codeLink) => {
     setTitle(title);
     setContent(content);
@@ -86,33 +96,31 @@ function App() {
     }
   };
 
+  //Handle image expansion
   const zoomImage = (path, caption) => {
     setOpen(true);
     setSlides([{ src: path, title: caption }]);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (ignoreScrollEvents.current) {
-        return;
-      }
+  //Close hamburger menu on scroll
+  const handleScroll = () => {
+    if (navbarRef.current && navbarRef.current.classList.contains('show')) {
       setExpanded(false);
-    };
+    }
+  };
 
-    window.addEventListener('scroll', handleScroll);
+  const handleRef = (ref) => {
+    navbarRef.current = ref.current
+  }
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+  //Open burger menu on navbar toggler click
   const handleToggle = () => {
     setExpanded(!expanded);
   };
 
   return (
-    <div className="page-wrapper">
-      <CustomNavbar expanded={expanded} handleToggle={handleToggle} handleSlideClick={handleSlideClick} activeSlide={activeSlide} />
+    <div className="page-wrapper" onTouchMove={handleScroll}>
+      <CustomNavbar expanded={expanded} handleToggle={handleToggle} handleSlideClick={handleSlideClick} activeSlide={activeSlide} onRef={handleRef} />
       <div className="container">
         <Carousel
           interval={null}

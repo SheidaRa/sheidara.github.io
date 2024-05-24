@@ -26,7 +26,7 @@ body {
 }
 
 .section-center {
-  min-height: 100vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   margin: 0;
@@ -178,6 +178,7 @@ h1 {
   transition: all 0.3s;
   cursor: pointer;
   font-size: 13px;
+  border-bottom: transparent solid
 }
 
 .nav-link:hover,
@@ -197,7 +198,9 @@ h1 {
 
 .navbar {
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: .3em 0;
 }
 
 .navbar ul {
@@ -333,6 +336,19 @@ h1 {
   font-size: 2em;
 }
 
+.closeIcon-div {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.closeIcon-div .closeIcon {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 1em;
+}
+
 .codeButton {
   padding: 1em 2em;
   border-radius: 20px;
@@ -353,6 +369,8 @@ h1 {
 .page-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .yarl__button.yarl__navigation_next,
@@ -365,7 +383,8 @@ h1 {
 }
 
 .navbar-brand {
-  max-width: 50px;
+  max-width: 40px;
+  padding: 0;
 }
 
 .navbar-brand img {
@@ -386,8 +405,8 @@ h1 {
 
 .burger {
   cursor: pointer;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   right: 1rem;
   top: 1rem;
   display: flex;
@@ -403,7 +422,7 @@ h1 {
 }
 
 .burger.opened>div:nth-child(1) {
-  transform: translateY(15px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .burger.opened>div:nth-child(2) {
@@ -411,7 +430,7 @@ h1 {
 }
 
 .burger.opened>div:nth-child(3) {
-  transform: translateY(-15px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .navbar-toggler {
@@ -466,6 +485,10 @@ h1 {
 }
 
 @media (min-width: 769px) {
+
+  .closeIcon-div {
+    display: none;
+  }
 
   .video-iframe {
     width: 530px;

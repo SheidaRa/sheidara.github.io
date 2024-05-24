@@ -152,7 +152,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
             link={
               "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810"
             }
-            image={"images/projects/Glowgirl.jpg"}
+            image={"images/projects/GlowGirl.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
                 8, //unique id

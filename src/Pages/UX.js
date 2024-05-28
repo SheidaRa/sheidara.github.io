@@ -6,6 +6,8 @@ import Chroma from "../Writings/Chroma";
 import Circle from "../Writings/Circle";
 import Tetris from "../Writings/Tetris";
 import GogyUp from "../Writings/GogyUp";
+import GlowGirl from "../Writings/GlowGirl";
+import Portfolio from "../Writings/Portfolio";
 
 const UX = ({ handleToggleExpansion, zoomImage }) => {
   const expandTitle = "Click to expand";
@@ -18,16 +20,13 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"Rate This Rental"}
             tools={["Figma"]}
-            link={
-              "https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1"
-            }
             image={"images/projects/RTR.jpg"}
             handleToggleExpansion={() => {
               handleToggleExpansion(
                 1,
                 "RTR",
                 <RTR zoomImage={zoomImage} expandTitle={expandTitle} />,
-                "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
+                "https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1"
               );
             }}
           />
@@ -37,9 +36,6 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"TouchChat Application Redesign"}
             tools={["Figma"]}
-            link={
-              "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
-            }
             image={"images/projects/hci.jpg"}
             handleToggleExpansion={() => {
               handleToggleExpansion(
@@ -56,9 +52,6 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"Circle Dating App Design"}
             tools={["Figma"]}
-            link={
-              "https://www.figma.com/file/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?type=design&node-id=0%3A1&mode=design&t=avpU1etV2FY6i0Lp-1"
-            }
             image={"images/projects/circle.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
@@ -75,9 +68,6 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"Tetris Puzzle App"}
             tools={["Figma", "Canva"]}
-            link={
-              "https://www.figma.com/file/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?type=design&node-id=0%3A1&mode=design&t=s09TuVAFIE55qNAH-1"
-            }
             image={"images/projects/tetris.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
@@ -94,9 +84,6 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"GogyUp Reader Redesign"}
             tools={["Canva"]}
-            link={
-              "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
-            }
             image={"images/projects/gogyup.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
@@ -113,16 +100,13 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"ChromaVR"}
             tools={["A-Frame", "JavaScript", "HTML"]}
-            link={
-              "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810"
-            }
             image={"images/projects/chroma.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
                 6, //unique id
                 "Exploring Emotions in VR", //project title
                 <Chroma zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
-                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
+                "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810" //code link
               )
             }
           />
@@ -131,16 +115,13 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"Online Portfolio"}
             tools={["Figma"]}
-            link={
-              "https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1"
-            }
             image={"images/projects/portfolio.jpg"}
             handleToggleExpansion={() => {
               handleToggleExpansion(
                 7,
-                "TouchChat",
-                <HCI zoomImage={zoomImage} expandTitle={expandTitle} />,
-                "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
+                "Online Portfolio",
+                <Portfolio zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://www.figma.com/file/dmk03DhK9vyMobZf92XYDt/Portfolio?type=design&node-id=0%3A1&mode=design&t=EC3Fj8neuHeP5ivl-1"
               );
             }}
           />
@@ -149,16 +130,13 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           <UXPortfolioCard
             project={"Glow Girl"}
             tools={["Figma"]}
-            link={
-              "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810"
-            }
             image={"images/projects/GlowGirl.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
                 8, //unique id
-                "Exploring Emotions in VR", //project title
-                <Chroma zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
-                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
+                "Glow Girl", //project title
+                <GlowGirl zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
+                "https://www.figma.com/design/cU2DtWzaQ07SdjGAH9qu5h/Glow-Girl-Woman-health-Education-Web-App?node-id=0-1&t=swNqaMHBQg5bE334-0" //code link
               )
             }
           />

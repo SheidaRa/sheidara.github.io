@@ -11,7 +11,7 @@ const Development = () => {
           <PortfolioCard
             project={"Sign Language Recognizer"}
             tools={["Python", "Media Pipe"]}
-            link={"https://github.com/SheidaRa"}
+            link={"https://github.com/SheidaRa/Sign-Language-Recogniser"}
             image={"images/projects/SLR.jpg"}
           />
         </div>
@@ -38,7 +38,7 @@ const Development = () => {
           <PortfolioCard
             project={"ChromaVR"}
             tools={["A-Frame", "JavaScript", "HTML"]}
-            link={"https://github.com/SheidaRa/"}
+            link={"https://github.com/SheidaRa/ChromaVR"}
             image={"images/projects/chroma.jpg"}
           />
         </div>

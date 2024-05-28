@@ -10,9 +10,15 @@ const InfoModal = forwardRef(
           }`}
       >
         <div className="cardContentHeader">
-          <a className="button" href={codeLink} target="blank">
+          {title === "GogyUp" && <a className="button" href={codeLink} target="blank">
+            Canva File
+          </a>}
+          {(title === "Exploring Emotions in VR" || title === "TouchChat") && <a className="button" href={codeLink} target="blank">
+            Medium Article
+          </a>}
+          {(title !== "Exploring Emotions in VR" && title !== "TouchChat" && title !== "GogyUp") && <a className="button" href={codeLink} target="blank">
             Figma File
-          </a>
+          </a>}
           <RxCross2 onClick={() => setExpandedItem(0)} className="closeIcon" />
         </div>
         <h2>{title}</h2>

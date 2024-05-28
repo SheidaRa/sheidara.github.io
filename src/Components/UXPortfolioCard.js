@@ -5,7 +5,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const UXPortfolioCard = ({
   project,
   tools,
-  link,
   image = "images/placeholder.jpg",
   handleToggleExpansion,
 }) => {

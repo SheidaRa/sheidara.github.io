@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --main-color: #25438F;
+  --main-color: #25438f;
   --button-hover-bg-color: #94b9a340;
 }
 
@@ -178,7 +178,7 @@ h1 {
   transition: all 0.3s;
   cursor: pointer;
   font-size: 13px;
-  border-bottom: transparent solid
+  border-bottom: transparent solid;
 }
 
 .nav-link:hover,
@@ -200,7 +200,7 @@ h1 {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  padding: .3em 0;
+  padding: 0.3em 0;
 }
 
 .navbar ul {
@@ -233,10 +233,12 @@ h1 {
   bottom: 0;
   transition: height 0.3s ease-out;
   border-radius: 10px;
-  background: linear-gradient(0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0.7875525210084033) 35%,
-      rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7875525210084033) 35%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
 
 .portfolio-content {
@@ -263,7 +265,6 @@ h1 {
   transform: translateY(0);
   top: 0;
   max-height: 90%;
-  padding: 1em;
 }
 
 .hideModal {
@@ -284,7 +285,7 @@ h1 {
   margin-top: 4em;
   margin-left: 14.5\em;
   width: 53.5em;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .infoModal img {
@@ -296,18 +297,17 @@ h1 {
 }
 
 .infoModal h2 {
-  color: #25438F;
+  color: #25438f;
   font-weight: 700;
   padding-bottom: 0.5em;
 }
 
 .infoModal h3 {
-  color: #25438F;
+  color: #25438f;
   font-weight: 600;
   font-size: 20px;
   padding-bottom: 0.5em;
   padding-top: 0.3em;
-
 }
 
 .infoModal h4 {
@@ -318,10 +318,6 @@ h1 {
 }
 
 .infoModal .button {
-  margin-bottom: 1em;
-  margin-top: 1em;
-
-
 }
 
 .cardContentHeader {
@@ -329,6 +325,19 @@ h1 {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  top: 0;
+  position: sticky;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+}
+
+.infoModal-content {
+  padding: 1em;
+  overflow-y: scroll;
+  max-height: 747px;
 }
 
 .closeIcon {
@@ -414,22 +423,22 @@ h1 {
   flex-direction: column;
 }
 
-.burger>div {
+.burger > div {
   height: 2px;
   background-color: #000;
   transition: 0.5s;
   z-index: 999;
 }
 
-.burger.opened>div:nth-child(1) {
+.burger.opened > div:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-.burger.opened>div:nth-child(2) {
+.burger.opened > div:nth-child(2) {
   opacity: 0;
 }
 
-.burger.opened>div:nth-child(3) {
+.burger.opened > div:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
 
@@ -444,10 +453,15 @@ h1 {
 
 /* Css for devices with a width inferior to 768px, so including mobile phones */
 @media (max-width: 768px) {
-
   .infoModal {
     width: 32.2em;
     margin-top: 6em;
+  }
+
+  .infoModal-content {
+    padding: 1em;
+    overflow-y: scroll;
+    max-height: 655px;
   }
 
   .showModal {
@@ -485,7 +499,6 @@ h1 {
 }
 
 @media (min-width: 769px) {
-
   .closeIcon-div {
     display: none;
   }
@@ -496,7 +509,7 @@ h1 {
   }
 
   .section-wrapper {
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
 
   .infoModal {

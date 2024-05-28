@@ -92,6 +92,9 @@ function App() {
     if (expandedItem === id) {
       setExpandedItem(null);
     } else {
+      if (infoRef.current) {
+        infoRef.current.scrollTo(0, 0)
+      }
       setExpandedItem(id);
     }
   };

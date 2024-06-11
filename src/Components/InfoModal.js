@@ -5,7 +5,6 @@ const InfoModal = forwardRef(
   ({ expandedItem, setExpandedItem, title, content, codeLink }, ref) => {
     return (
       <div
-        ref={ref}
         className={`infoModal ${
           expandedItem === 0 ? "hideModal" : "showModal"
         }`}
@@ -30,7 +29,7 @@ const InfoModal = forwardRef(
             )}
           <RxCross2 onClick={() => setExpandedItem(0)} className="closeIcon" />
         </div>
-        <div className="infoModal-content">
+        <div className="infoModal-content" ref={ref}>
           <h2>{title}</h2>
           {content}
         </div>

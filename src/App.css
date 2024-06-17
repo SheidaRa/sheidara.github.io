@@ -336,7 +336,7 @@ h1 {
 .infoModal-content {
   padding: 1em;
   overflow-y: scroll;
-  max-height: 68vh;
+  max-height: 78vh;
 }
 
 .closeIcon {

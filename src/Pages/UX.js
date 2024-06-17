@@ -50,24 +50,25 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
 
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
-            project={"Circle Dating App Design"}
-            tools={["Figma"]}
-            image={"images/projects/circle.jpg"}
+            project={"ChromaVR"}
+            tools={["A-Frame", "JavaScript", "HTML"]}
+            image={"images/projects/chroma.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
-                3, //unique id
-                "Circle", //project title
-                <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
-                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
+                6, //unique id
+                "Exploring Emotions in VR", //project title
+                <Chroma zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
+                "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810" //code link
               )
             }
           />
         </div>
 
+
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Tetris Puzzle App"}
-            tools={["Figma", "Canva"]}
+            tools={["Figma"]}
             image={"images/projects/tetris.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
@@ -83,14 +84,14 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"GogyUp Reader Redesign"}
-            tools={["Canva"]}
+            tools={["Figama"]}
             image={"images/projects/gogyup.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
                 5,
                 "GogyUp",
                 <GogyUp zoomImage={zoomImage} expandTitle={expandTitle} />,
-                "https://www.canva.com/design/DAFDzmd6c-0/BNVA2W1HbIsnrAKwF8JFPw/view?mode=prototype#untitled-page"
+                "https://www.figma.com/community/file/1373182183775895767/gogyup-reader-redesign"
               )
             }
           />
@@ -98,19 +99,21 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
 
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
-            project={"ChromaVR"}
-            tools={["A-Frame", "JavaScript", "HTML"]}
-            image={"images/projects/chroma.jpg"}
+            project={"Circle Dating App Design"}
+            tools={["Figma"]}
+            image={"images/projects/circle.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
-                6, //unique id
-                "Exploring Emotions in VR", //project title
-                <Chroma zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
-                "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810" //code link
+                3, //unique id
+                "Circle", //project title
+                <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
+                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
               )
             }
           />
         </div>
+
+
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Online Portfolio"}

@@ -18,13 +18,13 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
       >
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
-            project={"Rate This Rental"}
+            project={"Rate This Rental Web Application"}
             tools={["Figma"]}
             image={"images/projects/RTR.jpg"}
             handleToggleExpansion={() => {
               handleToggleExpansion(
                 1,
-                "RTR",
+                "Rate This Rental Web Application",
                 <RTR zoomImage={zoomImage} expandTitle={expandTitle} />,
                 "https://www.figma.com/file/WoSJdRMeJluZBMLoDEpz2X/Untitled?type=design&node-id=0%3A1&mode=design&t=YPTkZIedXfOHKz2Y-1"
               );

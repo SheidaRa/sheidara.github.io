@@ -179,15 +179,23 @@ h1 {
   cursor: pointer;
   font-size: 13px;
   border-bottom: transparent solid;
+  border-radius: 0;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: #000;
+  border-bottom: transparent;
+}
+
+.nav-link:active {
+  background-color: transparent !important;
+  color: #000 !important;
 }
 
 .nav-link:hover {
   opacity: 0.7;
+  background-color: transparent !important;
 }
 
 .nav-link.active {
@@ -233,12 +241,10 @@ h1 {
   bottom: 0;
   transition: height 0.3s ease-out;
   border-radius: 10px;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.7875525210084033) 35%,
-    rgba(0, 212, 255, 0) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.7875525210084033) 35%,
+      rgba(0, 212, 255, 0) 100%);
 }
 
 .portfolio-content {
@@ -266,13 +272,6 @@ h1 {
   top: 0;
 }
 
-.hideModal {
-  transform: translateY(-100%);
-  top: 100vh;
-  max-height: 0;
-  overflow: hidden;
-}
-
 /* Info modal css */
 .infoModal {
   position: fixed;
@@ -285,7 +284,16 @@ h1 {
   margin-left: 14.5\em;
   width: 53.5em;
   overflow-y: hidden;
+  max-height: 100vh;
 }
+
+.hideModal {
+  transform: translateY(-100%);
+  top: 100vh;
+  max-height: 0;
+  overflow: hidden;
+}
+
 
 .infoModal img {
   width: auto;
@@ -316,8 +324,7 @@ h1 {
   padding-bottom: 0.2em;
 }
 
-.infoModal .button {
-}
+.infoModal .button {}
 
 .cardContentHeader {
   display: flex;
@@ -422,22 +429,22 @@ h1 {
   flex-direction: column;
 }
 
-.burger > div {
+.burger>div {
   height: 2px;
   background-color: #000;
   transition: 0.5s;
   z-index: 999;
 }
 
-.burger.opened > div:nth-child(1) {
+.burger.opened>div:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-.burger.opened > div:nth-child(2) {
+.burger.opened>div:nth-child(2) {
   opacity: 0;
 }
 
-.burger.opened > div:nth-child(3) {
+.burger.opened>div:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
 

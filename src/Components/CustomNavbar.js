@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Hamburger from './Hamburger';
 import React, { useRef } from 'react';
+import { Button } from 'react-bootstrap';
 
 const CustomNavbar = ({ expanded, handleToggle, handleSlideClick, activeSlide, onRef }) => {
 
@@ -20,11 +21,11 @@ const CustomNavbar = ({ expanded, handleToggle, handleSlideClick, activeSlide, o
         <Navbar.Collapse id="basic-navbar-nav" ref={navbarRef}>
           <div className='col-lg-10 offset-lg-1 col-12'>
             <Nav className="me-auto">
-              <Nav.Link onClick={() => handleSlideClick(0)} className={`${activeSlide === 0 ? "active" : ""}`}>About</Nav.Link>
-              <Nav.Link onClick={() => handleSlideClick(3)} className={`${activeSlide === 3 ? "active" : ""}`}>Development Portfolio</Nav.Link>
-              <Nav.Link onClick={() => handleSlideClick(4)} className={`${activeSlide === 4 ? "active" : ""}`} >UX Portfolio</Nav.Link>
-              <Nav.Link onClick={() => handleSlideClick(2)} className={`${activeSlide === 2 ? "active" : ""}`} >Work Experience</Nav.Link>
-              <Nav.Link onClick={() => handleSlideClick(1)} className={`${activeSlide === 1 ? "active" : ""}`} >Education</Nav.Link>
+              <Button onClick={() => handleSlideClick(0)} className={` nav-link ${activeSlide === 0 ? "active" : ""}`}>About</Button>
+              <Button onClick={() => handleSlideClick(3)} className={` nav-link ${activeSlide === 3 ? "active" : ""}`}>Development Portfolio</Button>
+              <Button onClick={() => handleSlideClick(4)} className={` nav-link ${activeSlide === 4 ? "active" : ""}`} >UX Portfolio</Button>
+              <Button onClick={() => handleSlideClick(2)} className={` nav-link ${activeSlide === 2 ? "active" : ""}`} >Work Experience</Button>
+              <Button onClick={() => handleSlideClick(1)} className={` nav-link ${activeSlide === 1 ? "active" : ""}`} >Education</Button>
             </Nav>
           </div>
         </Navbar.Collapse>

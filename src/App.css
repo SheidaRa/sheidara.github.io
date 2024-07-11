@@ -241,10 +241,12 @@ h1 {
   bottom: 0;
   transition: height 0.3s ease-out;
   border-radius: 10px;
-  background: linear-gradient(0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0.7875525210084033) 35%,
-      rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7875525210084033) 35%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
 
 .portfolio-content {
@@ -294,7 +296,6 @@ h1 {
   overflow: hidden;
 }
 
-
 .infoModal img {
   width: auto;
   height: 100%;
@@ -324,7 +325,8 @@ h1 {
   padding-bottom: 0.2em;
 }
 
-.infoModal .button {}
+.infoModal .button {
+}
 
 .cardContentHeader {
   display: flex;
@@ -429,22 +431,22 @@ h1 {
   flex-direction: column;
 }
 
-.burger>div {
+.burger > div {
   height: 2px;
   background-color: #000;
   transition: 0.5s;
   z-index: 999;
 }
 
-.burger.opened>div:nth-child(1) {
+.burger.opened > div:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-.burger.opened>div:nth-child(2) {
+.burger.opened > div:nth-child(2) {
   opacity: 0;
 }
 
-.burger.opened>div:nth-child(3) {
+.burger.opened > div:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
 
@@ -530,9 +532,30 @@ h1 {
   }
 }
 
+.custom-card-title {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+.design {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  display: block;
+}
+
 @media (min-width: 1200px) {
   .infoModal {
     width: 55em;
+  }
+
+  .custom-card-title {
+    font-size: 1.75rem;
+  }
+
+  .design {
+    font-size: 1.5rem;
   }
 }
 

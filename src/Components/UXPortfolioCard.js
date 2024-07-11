@@ -17,12 +17,12 @@ const UXPortfolioCard = ({
       <div className="portfolio-card" onClick={handleToggleExpansion}>
         <div className="portfolio-img" style={divStyle}>
           <div className="portfolio-content">
-            <h4> Design and More... </h4>
+            <span className="design"> Design and More... </span>
           </div>
         </div>
       </div>
       <div>
-        <h3>{project}</h3>
+        <h2 className="custom-card-title">{project}</h2>
         <div className="tools">
           {tools.map((tool, index) => (
             <span key={index}>

@@ -25,7 +25,7 @@ const PortfolioCard = ({
         </div>
       </div>
       <div>
-        <h3>{project}</h3>
+        <h2 className="custom-card-title">{project}</h2>
         <div className="tools">
           {tools.map((tool, index) => (
             <span key={index}>

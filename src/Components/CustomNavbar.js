@@ -14,7 +14,7 @@ const CustomNavbar = ({ expanded, handleToggle, handleSlideClick, activeSlide, o
     <Navbar expand="md" sticky='top' expanded={expanded} onToggle={handleToggle}>
       <Container className='nav-container'>
         <Navbar.Brand>
-          <img src="favicon.ico" className='nav-brand' />
+          <img src="favicon.ico" className='nav-brand' alt='Sheida Rashidi' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" children={<Hamburger expandedBurger={expanded} />} />
         <Navbar.Collapse id="basic-navbar-nav" ref={navbarRef}>

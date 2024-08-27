@@ -5,28 +5,17 @@ const InfoModal = forwardRef(
   ({ expandedItem, setExpandedItem, title, content, codeLink }, ref) => {
     return (
       <div
-        className={`infoModal ${
-          expandedItem === 0 ? "hideModal" : "showModal"
-        }`}
+        className={`infoModal ${expandedItem === 0 ? "hideModal" : "showModal"
+          }`}
       >
         <div className="cardContentHeader">
-          {title === "GogyUp" && (
-            <a className="button" href={codeLink} target="blank">
-              Canva File
-            </a>
-          )}
-          {(title === "Exploring Emotions in VR" || title === "TouchChat") && (
-            <a className="button" href={codeLink} target="blank">
+          {(title === "Exploring Emotions in VR") ? (
+            <a className="headerLink" href={codeLink} target="blank">
               Medium Article
             </a>
-          )}
-          {title !== "Exploring Emotions in VR" &&
-            title !== "TouchChat" &&
-            title !== "GogyUp" && (
-              <a className="button" href={codeLink} target="blank">
-                Figma File
-              </a>
-            )}
+          ) : <a className="headerLink" href={codeLink} target="blank">
+            Figma File
+          </a>}
           <RxCross2 onClick={() => setExpandedItem(0)} className="closeIcon" />
         </div>
         <div className="infoModal-content" ref={ref}>

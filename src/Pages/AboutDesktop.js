@@ -1,4 +1,8 @@
 import React from "react";
+import { FaFigma } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFileLines } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -6,11 +10,26 @@ const About = () => {
       {/* We use row class to use multiple columns side to side */}
       <div className="row">
         {/* that's the 1st column, the one with the text */}
-        <div className="col-lg-4 offset-lg-2">
+        <div className="col-lg-5 offset-lg-2">
           <div className="presentation">
             {/* <div className="hello">Hello, I am</div> */}
             <h1>Sheida Rashidi</h1>
-            <h2>Developer / Designer</h2>
+            <h2>Software Developer<br></br>UX Designer</h2>
+            <div className="contact-link">
+              <a href="https://www.figma.com/@sheidara" target="blank" title="Figma" >
+                <FaFigma />
+              </a>
+              <a href="https://github.com/SheidaRa" target="blank" title="Github">
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/sheida-rashidi" target="blank" title="LinkedIn">
+                <FaLinkedin />
+              </a>
+              <a href="" target="blank" title="Resume">
+                <FaFileLines />
+              </a>
+
+            </div>
             <p>
               I am a passionate individual with a strong affinity for
               development, AI, and UX design, particularly in the domains of

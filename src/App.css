@@ -17,7 +17,7 @@ body {
 }
 
 .section {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 .section-mobile {
@@ -103,6 +103,26 @@ h1 {
 
 .button:hover span {
   left: 10px;
+}
+
+.headerLink {
+  padding: 0.7em;
+  border-radius: 1em;
+  border: solid var(--main-color) 2px;
+  background: none;
+  color: var(--main-color);
+  transition: all 0.3s;
+  text-align: left;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.headerLink:hover {
+  background: var(--main-color);
+  color: red;
 }
 
 .education-card,
@@ -241,12 +261,10 @@ h1 {
   bottom: 0;
   transition: height 0.3s ease-out;
   border-radius: 10px;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.7875525210084033) 35%,
-    rgba(0, 212, 255, 0) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.7875525210084033) 35%,
+      rgba(0, 212, 255, 0) 100%);
 }
 
 .portfolio-content {
@@ -325,8 +343,7 @@ h1 {
   padding-bottom: 0.2em;
 }
 
-.infoModal .button {
-}
+.infoModal .button {}
 
 .cardContentHeader {
   display: flex;
@@ -431,22 +448,22 @@ h1 {
   flex-direction: column;
 }
 
-.burger > div {
+.burger>div {
   height: 2px;
   background-color: #000;
   transition: 0.5s;
   z-index: 999;
 }
 
-.burger.opened > div:nth-child(1) {
+.burger.opened>div:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-.burger.opened > div:nth-child(2) {
+.burger.opened>div:nth-child(2) {
   opacity: 0;
 }
 
-.burger.opened > div:nth-child(3) {
+.burger.opened>div:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
 
@@ -457,6 +474,22 @@ h1 {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.contact-link a {
+  color: #000;
+  font-size: 1.5em;
+  margin-right: .5em;
+  opacity: 1;
+  transition: ease-in-out .3s;
+}
+
+.contact-link a:hover {
+  opacity: .7;
+}
+
+.contact-link {
+  margin-bottom: 1em;
 }
 
 /* Css for devices with a width inferior to 768px, so including mobile phones */

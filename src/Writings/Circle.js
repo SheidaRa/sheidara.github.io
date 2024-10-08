@@ -1,4 +1,6 @@
 import React from "react";
+import ExpandableImage from "../Components/ExpandableImage";
+
 
 const Circle = ({ zoomImage, expandTitle }) => {
   return (
@@ -112,6 +114,14 @@ const Circle = ({ zoomImage, expandTitle }) => {
           <p>Rounded icons and playful illustrations are used throughout the app to enhance the user experience. For example, during onboarding, users see playful illustrations of hobbies (e.g., camping, painting), which add a lighthearted touch to the profile creation process.</p>
         </li>
       </ol>
+      
+      <ExpandableImage
+        path="images/projects/CircleCS.png"
+        alt="Chart of values and value tensions for stakeholders"
+        expandTitle={expandTitle}
+        zoomImage={zoomImage}
+        caption="Color Scheme"
+      />
 
       <hr />
 

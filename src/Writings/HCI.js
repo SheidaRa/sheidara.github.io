@@ -4,13 +4,31 @@ import ExpandableImage from "../Components/ExpandableImage";
 const HCI = ({ zoomImage, expandTitle }) => {
   return (
     <>
-      <ExpandableImage
+      {/* <ExpandableImage
         path="images/projects/hci.jpg"
         alt="Hi-fi prototype for an AAC device on a tablet"
         expandTitle={expandTitle}
         zoomImage={zoomImage}
         caption="A screen of our hi-fi prototype for an AAC device on tablet"
-      />
+      /> */}
+
+      
+<div style={{ textAlign: 'center', margin: '20px 0' }}>
+    <iframe 
+        style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }} 
+        width="800" 
+        height="450" 
+        src="https://embed.figma.com/proto/85gVJxKHpDgmEmzmbWWXll/Redesign-for-TouchChat-(Community)?node-id=5-2&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A2&embed-host=share" 
+        allowFullScreen
+    ></iframe>
+    <p style={{ marginTop: '10px', fontStyle: 'italic' }}>
+        Redesign Prototype
+    </p>
+    {/* <p style={{ fontSize: '0.9em', color: '#666' }}>
+        The embedded Figma prototype showcases the redesign for the TouchChat application, highlighting key user interface improvements and interaction design. This prototype allows users to explore the updated design and user experience enhancements in detail.
+    </p> */}
+</div>
+
 
       <h2>Overview</h2>
       <p>

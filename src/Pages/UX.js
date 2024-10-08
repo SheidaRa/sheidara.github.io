@@ -64,23 +64,22 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
           />
         </div>
 
-
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
-            project={"Tetris Puzzle App"}
+            project={"Circle Dating App Design"}
             tools={["Figma"]}
-            image={"images/projects/tetris.jpg"}
+            image={"images/projects/circle.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
-                4,
-                "Tetris",
-                <Tetris zoomImage={zoomImage} expandTitle={expandTitle} />,
-                "https://www.figma.com/design/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?t=wFYlj9dELbKvbBWl-0"
+                3, //unique id
+                "Circle Dating App Design", //project title
+                <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
+                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
               )
             }
           />
         </div>
-
+       
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"GogyUp Reader Redesign"}
@@ -99,19 +98,20 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
 
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
-            project={"Circle Dating App Design"}
+            project={"Tetris Puzzle App"}
             tools={["Figma"]}
-            image={"images/projects/circle.jpg"}
+            image={"images/projects/tetris.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
-                3, //unique id
-                "Circle", //project title
-                <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
-                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
+                4,
+                "Tetris",
+                <Tetris zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://www.figma.com/design/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?t=wFYlj9dELbKvbBWl-0"
               )
             }
           />
         </div>
+
 
 
         <div className="col-lg-5 col-md-6">

@@ -16,19 +16,19 @@ const Circle = ({ zoomImage, expandTitle }) => {
 
       <hr />
       <div style={{ textAlign: 'center', margin: '20px 0' }}>
-    <iframe 
-        style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }} 
-        width="800" 
-        height="450" 
-        src="https://embed.figma.com/proto/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=42-1380&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=42%3A1380&embed-host=share" 
-        allowFullScreen
-        title="Dating App Design Prototype"
-    ></iframe>
-    <p style={{ marginTop: '10px', fontStyle: 'italic' }}>
-        Dating App Design Prototype
-    </p>
+        <iframe
+          style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+          width="800"
+          height="450"
+          src="https://embed.figma.com/proto/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=42-1380&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=42%3A1380&embed-host=share"
+          allowFullScreen
+          title="Dating App Design Prototype"
+        ></iframe>
+        <p style={{ marginTop: '10px', fontStyle: 'italic' }}>
+          Dating App Design Prototype
+        </p>
 
-</div>
+      </div>
 
       < h3>2. Problem Statement</ h3>
       <p>Most dating apps focus on one-on-one matching, which can lead to awkward first encounters and high-pressure situations. <strong>Circle</strong> challenges this by matching groups of people based on shared hobbies, values, and personality traits. By facilitating <strong>group interactions</strong>, the app aims to create a more relaxed and social atmosphere where connections can form naturally.</p>
@@ -114,7 +114,7 @@ const Circle = ({ zoomImage, expandTitle }) => {
           <p>Rounded icons and playful illustrations are used throughout the app to enhance the user experience. For example, during onboarding, users see playful illustrations of hobbies (e.g., camping, painting), which add a lighthearted touch to the profile creation process.</p>
         </li>
       </ol>
-      
+
       <ExpandableImage
         path="images/projects/CircleCS.png"
         alt="Chart of values and value tensions for stakeholders"

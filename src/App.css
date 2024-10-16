@@ -294,23 +294,30 @@ h1 {
 
 /* Info modal css */
 .infoModal {
-  position: fixed;
+  position: relative;
   background-color: #fff;
   border: 1px solid #000;
   transition: all 0.5s ease-in-out;
   border-radius: 15px;
   z-index: 1;
-  margin-top: 4em;
-  margin-left: 14.5\em;
   width: 53.5em;
   overflow-y: hidden;
-  max-height: 100vh;
+  height: 90%;
+}
+
+.infoModalContainer {
+  display: flex;
+  position: fixed;
+  height: calc(100% - 50px);
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
 }
 
 .hideModal {
-  transform: translateY(-100%);
-  top: 100vh;
-  max-height: 0;
+  transform: translateY(100%);
   overflow: hidden;
 }
 
@@ -362,7 +369,7 @@ h1 {
 .infoModal-content {
   padding: 1em;
   overflow-y: scroll;
-  max-height: 78vh;
+  height: calc(100% - 83px);
 }
 
 .closeIcon {
@@ -500,13 +507,6 @@ iframe {
 @media (max-width: 768px) {
   .infoModal {
     width: 32.2em;
-    margin-top: 6em;
-  }
-
-  .infoModal-content {
-    padding: 1em;
-    overflow-y: scroll;
-    max-height: 68vh;
   }
 
   .desktop {

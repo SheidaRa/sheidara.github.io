@@ -85,12 +85,14 @@ function App() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [codeLink, setCodeLink] = useState("");
+  const [buttonName, setButtonName] = useState("")
 
   //Handle pop up window on card click
-  const handleToggleExpansion = (id, title, content, codeLink) => {
+  const handleToggleExpansion = (id, title, content, codeLink, buttonName) => {
     setTitle(title);
     setContent(content);
     setCodeLink(codeLink);
+    setButtonName(buttonName)
     if (expandedItem === id) {
       setExpandedItem(null);
     } else {
@@ -179,6 +181,7 @@ function App() {
         setExpandedItem={setExpandedItem}
         title={title}
         content={content}
+        buttonName={buttonName}
       />
       {/* Component for expanded images */}
       <Lightbox

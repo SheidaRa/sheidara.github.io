@@ -58,7 +58,8 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
                 6, //unique id
                 "Exploring Emotions in VR", //project title
                 <Chroma zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
-                "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810" //code link
+                "https://medium.com/macalester-hci/how-color-affects-emotions-a-vr-experience-ace8bad5b810", //code link
+                "Medium Article" //Button Name default is Figma File
               )
             }
           />
@@ -79,7 +80,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
             }
           />
         </div>
-       
+
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"GogyUp Reader Redesign"}

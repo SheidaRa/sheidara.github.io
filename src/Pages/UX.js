@@ -42,7 +42,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
                 2,
                 "TouchChat",
                 <HCI zoomImage={zoomImage} expandTitle={expandTitle} />,
-                "https://medium.com/@hadothainguyen.design/redesigning-aac-devices-a-ux-design-project-d8f005ccba01"
+                "https://www.figma.com/design/8VyIYlHeFAQZRysSmYsgAA/Redesign-for-TouchChat-(Community)?node-id=0-1&node-type=canvas"
               );
             }}
           />

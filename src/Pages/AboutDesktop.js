@@ -1,4 +1,8 @@
 import React from "react";
+import { FaFigma } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFileLines } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -10,7 +14,37 @@ const About = () => {
           <div className="presentation">
             {/* <div className="hello">Hello, I am</div> */}
             <h1>Sheida Rashidi</h1>
-            <h2>Developer / Designer</h2>
+            <h2>
+              Developer / Designer
+              <br />
+              UX Designer
+            </h2>
+            <div className="contact-link">
+              <a
+                href="https://www.figma.com/@sheidara"
+                target="blank"
+                title="My Figma"
+              >
+                <FaFigma />
+              </a>
+              <a
+                href="https://www.figma.com/@sheidara"
+                target="blank"
+                title="My Github"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.figma.com/@sheidara"
+                target="blank"
+                title="My Linkedin"
+              >
+                <FaLinkedin />
+              </a>
+              <a href="" target="" title="My resume">
+                <FaFileLines />
+              </a>
+            </div>
             <p>
               I am a passionate individual with a strong affinity for
               development, AI, and UX design, particularly in the domains of

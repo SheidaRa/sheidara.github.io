@@ -15,7 +15,7 @@ const About = () => {
             {/* <div className="hello">Hello, I am</div> */}
             <h1>Sheida Rashidi</h1>
             <h2>
-              Developer / Designer
+              Software Developer
               <br />
               UX Designer
             </h2>
@@ -28,14 +28,14 @@ const About = () => {
                 <FaFigma />
               </a>
               <a
-                href="https://www.figma.com/@sheidara"
+                href="https://github.com/SheidaRa"
                 target="blank"
                 title="My Github"
               >
                 <FaGithub />
               </a>
               <a
-                href="https://www.figma.com/@sheidara"
+                href="https://www.linkedin.com/in/sheida-rashidi"
                 target="blank"
                 title="My Linkedin"
               >

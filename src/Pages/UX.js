@@ -1,21 +1,19 @@
 import React from "react";
 import UXPortfolioCard from "../Components/UXPortfolioCard";
-import RTR from "../Writings/RTR";
-import HCI from "../Writings/HCI";
-import Chroma from "../Writings/Chroma";
-import Circle from "../Writings/Circle";
-import Tetris from "../Writings/Tetris";
-import GogyUp from "../Writings/GogyUp";
-import GlowGirl from "../Writings/GlowGirl";
-import Portfolio from "../Writings/Portfolio";
+import RTR from "../Writings/UX/RTR";
+import HCI from "../Writings/UX/HCI";
+import Chroma from "../Writings/UX/Chroma";
+import Circle from "../Writings/UX/Circle";
+import Tetris from "../Writings/UX/Tetris";
+import GogyUp from "../Writings/UX/GogyUp";
+import GlowGirl from "../Writings/UX/GlowGirl";
+import Portfolio from "../Writings/UX/Portfolio";
 
 const UX = ({ handleToggleExpansion, zoomImage }) => {
   const expandTitle = "Click to expand";
   return (
     <div className="col-lg-10 offset-lg-1">
-      <div
-        className="row section-wrapper"
-      >
+      <div className="row section-wrapper">
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Rate This Rental Web Application"}
@@ -42,7 +40,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
                 2,
                 "TouchChat",
                 <HCI zoomImage={zoomImage} expandTitle={expandTitle} />,
-                "https://www.figma.com/design/8VyIYlHeFAQZRysSmYsgAA/Redesign-for-TouchChat-(Community)?node-id=0-1&t=GT5NXZB2XIWnRrtr-0"
+                "https://www.figma.com/design/8VyIYlHeFAQZRysSmYsgAA/Redesign-for-TouchChat-(Community)?node-id=0-1&node-type=canvas"
               );
             }}
           />
@@ -84,7 +82,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"GogyUp Reader Redesign"}
-            tools={["Figama"]}
+            tools={["Figma"]}
             image={"images/projects/gogyup.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
@@ -99,21 +97,19 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
 
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
-            project={"Tetris Puzzle App"}
+            project={"Circle Dating App Design"}
             tools={["Figma"]}
-            image={"images/projects/tetris.jpg"}
+            image={"images/projects/circle.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
-                4,
-                "Tetris",
-                <Tetris zoomImage={zoomImage} expandTitle={expandTitle} />,
-                "https://www.figma.com/design/apY5WhaVTtrDNVomkNDZ9e/Tetris-Puzzle?t=wFYlj9dELbKvbBWl-0"
+                3, //unique id
+                "Circle Dating App Design", //project title
+                <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
+                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
               )
             }
           />
         </div>
-
-
 
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard

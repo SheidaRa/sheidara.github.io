@@ -1,6 +1,13 @@
 import React from "react";
 
-const ExpandableImage = ({ path, alt, caption, zoomImage, expandTitle }) => {
+const ExpandableImage = ({
+  path,
+  alt,
+  caption,
+  zoomImage,
+  expandTitle,
+  width = "100%",
+}) => {
   return (
     <div className="img-wrapper">
       <img
@@ -8,6 +15,7 @@ const ExpandableImage = ({ path, alt, caption, zoomImage, expandTitle }) => {
         alt={alt}
         title={expandTitle}
         onClick={() => zoomImage(path, caption)}
+        style={{ width: width }}
       />
       {caption && <p>{caption}</p>}
     </div>

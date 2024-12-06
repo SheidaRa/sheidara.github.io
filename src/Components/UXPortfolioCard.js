@@ -7,6 +7,7 @@ const UXPortfolioCard = ({
   tools,
   image = "images/placeholder.jpg",
   handleToggleExpansion,
+  hovername = " Design and More... ",
 }) => {
   const divStyle = {
     backgroundImage: `url(${image})`,
@@ -17,7 +18,7 @@ const UXPortfolioCard = ({
       <div className="portfolio-card" onClick={handleToggleExpansion}>
         <div className="portfolio-img" style={divStyle}>
           <div className="portfolio-content">
-            <span className="design"> Design and More... </span>
+            <span className="design"> {hovername} </span>
           </div>
         </div>
       </div>

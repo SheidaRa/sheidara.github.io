@@ -4,9 +4,7 @@ import EducationCard from "../Components/EducationCard";
 const Education = () => {
   return (
     <div className="col-lg-10 offset-lg-1">
-      <div
-        className="row section-wrapper"
-      >
+      <div className="row section-wrapper">
         <div className="col-lg-5 col-md-6">
           <EducationCard
             school={"Macalester College"}

@@ -1,27 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from "react";
 
 const Hamburger = ({ expandedBurger }) => {
+  return (
+    <div className={`burger ${expandedBurger ? "opened" : "closed"} `}>
+      <div className="burger-line"></div>
+      <div className="burger-line"></div>
+      <div className="burger-line"></div>
+    </div>
+  );
+};
 
-    const [handleInternalClick, setHandleInternalClick] = useState(() => () => { })
-
-    useEffect(() => {
-        if (expandedBurger) {
-            setHandleInternalClick(() => (event) => {
-                event.stopPropagation()
-            })
-        }
-        else {
-            setHandleInternalClick(() => () => { })
-        }
-    }, [expandedBurger])
-
-    return (
-        <div className={`burger ${expandedBurger ? "opened" : "closed"} `}>
-            <div onClick={handleInternalClick}></div>
-            <div onClick={handleInternalClick}></div>
-            <div onClick={handleInternalClick}></div>
-        </div>
-    )
-}
-
-export default Hamburger
+export default Hamburger;

@@ -29,8 +29,8 @@ function App() {
   const zoomRef = useRef(null);
 
   //burger menu
-  const [expanded, setExpanded] = useState(false)
-  const navbarRef = useRef(null)
+  const [expanded, setExpanded] = useState(false);
+  const navbarRef = useRef(null);
 
   //info window ref
   const infoRef = useRef(null);
@@ -49,7 +49,7 @@ function App() {
         !event.target.classList.contains("yarl__slide_title") &&
         !event.target.classList.contains("yarl__slide_captions_container") &&
         !event.target.classList.contains("cardContentHeader") &&
-        !event.target.classList.contains("headerLink")
+        !event.target.href
       ) {
         setExpandedItem(0);
       }
@@ -58,9 +58,10 @@ function App() {
         !event.target.classList.contains("burger") &&
         !event.target.classList.contains("nav-container") &&
         !event.target.classList.contains("nav-link") &&
+        !event.target.classList.contains("burger-line") &&
         !event.target.classList.contains("nav-brand")
       ) {
-        setExpanded(false)
+        setExpanded(false);
       }
     };
 
@@ -76,8 +77,8 @@ function App() {
     setActiveSlide(slideIndex);
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
+      behavior: "smooth",
+    });
   };
 
   const [expandedItem, setExpandedItem] = useState(0);
@@ -85,19 +86,19 @@ function App() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [codeLink, setCodeLink] = useState("");
-  const [buttonName, setButtonName] = useState("")
+  const [buttonName, setButtonName] = useState("");
 
   //Handle pop up window on card click
   const handleToggleExpansion = (id, title, content, codeLink, buttonName) => {
     setTitle(title);
     setContent(content);
     setCodeLink(codeLink);
-    setButtonName(buttonName)
+    setButtonName(buttonName);
     if (expandedItem === id) {
       setExpandedItem(null);
     } else {
       if (infoRef.current) {
-        infoRef.current.scrollTo(0, 0)
+        infoRef.current.scrollTo(0, 0);
       }
       setExpandedItem(id);
     }
@@ -111,14 +112,14 @@ function App() {
 
   //Close hamburger menu on scroll
   const handleScroll = () => {
-    if (navbarRef.current && navbarRef.current.classList.contains('show')) {
+    if (navbarRef.current && navbarRef.current.classList.contains("show")) {
       setExpanded(false);
     }
   };
 
   const handleRef = (ref) => {
-    navbarRef.current = ref.current
-  }
+    navbarRef.current = ref.current;
+  };
 
   //Open burger menu on navbar toggler click
   const handleToggle = () => {
@@ -127,7 +128,13 @@ function App() {
 
   return (
     <div className="page-wrapper" onTouchMove={handleScroll}>
-      <CustomNavbar expanded={expanded} handleToggle={handleToggle} handleSlideClick={handleSlideClick} activeSlide={activeSlide} onRef={handleRef} />
+      <CustomNavbar
+        expanded={expanded}
+        handleToggle={handleToggle}
+        handleSlideClick={handleSlideClick}
+        activeSlide={activeSlide}
+        onRef={handleRef}
+      />
       <div className="container">
         <Carousel
           interval={null}
@@ -158,7 +165,10 @@ function App() {
 
           <Carousel.Item>
             <section className="section">
-              <Development />
+              <Development
+                handleToggleExpansion={handleToggleExpansion}
+                zoomImage={zoomImage}
+              />
             </section>
           </Carousel.Item>
 

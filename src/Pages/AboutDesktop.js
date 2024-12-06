@@ -14,21 +14,36 @@ const About = () => {
           <div className="presentation">
             {/* <div className="hello">Hello, I am</div> */}
             <h1>Sheida Rashidi</h1>
-            <h2>Software Developer<br></br>UX Designer</h2>
+            <h2>
+              Software Developer
+              <br />
+              UX Designer
+            </h2>
             <div className="contact-link">
-              <a href="https://www.figma.com/@sheidara" target="blank" title="Figma" >
+              <a
+                href="https://www.figma.com/@sheidara"
+                target="blank"
+                title="My Figma"
+              >
                 <FaFigma />
               </a>
-              <a href="https://github.com/SheidaRa" target="blank" title="Github">
+              <a
+                href="https://github.com/SheidaRa"
+                target="blank"
+                title="My Github"
+              >
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/sheida-rashidi" target="blank" title="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/sheida-rashidi"
+                target="blank"
+                title="My Linkedin"
+              >
                 <FaLinkedin />
               </a>
-              <a href="" target="blank" title="Resume">
+              <a href="files/resume.pdf" target="_blank" title="My resume">
                 <FaFileLines />
               </a>
-
             </div>
             <p>
               I am a passionate individual with a strong affinity for

@@ -205,7 +205,7 @@ h1 {
 .nav-link:hover,
 .nav-link:focus {
   color: #000;
-  border-bottom: transparent;
+  border-bottom: transparent solid;
 }
 
 .nav-link:active {
@@ -344,9 +344,9 @@ h1 {
 }
 
 .infoModal h4 {
-  color: #;
-  font-weight: 550;
-  font-size: 19px;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 17px;
   padding-bottom: 0.2em;
 }
 
@@ -490,13 +490,13 @@ iframe {
 .contact-link a {
   color: #000;
   font-size: 1.5em;
-  margin-right: .5em;
+  margin-right: 0.5em;
   opacity: 1;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .contact-link a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .contact-link {

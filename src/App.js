@@ -47,7 +47,9 @@ function App() {
         !event.target.classList.contains("yarl__fullsize") &&
         !event.target.classList.contains("yarl__slide_image") &&
         !event.target.classList.contains("yarl__slide_title") &&
-        !event.target.classList.contains("yarl__slide_captions_container")
+        !event.target.classList.contains("yarl__slide_captions_container") &&
+        !event.target.classList.contains("cardContentHeader") &&
+        !event.target.href
       ) {
         setExpandedItem(0);
       }
@@ -163,7 +165,10 @@ function App() {
 
           <Carousel.Item>
             <section className="section">
-              <Development />
+              <Development
+                handleToggleExpansion={handleToggleExpansion}
+                zoomImage={zoomImage}
+              />
             </section>
           </Carousel.Item>
 

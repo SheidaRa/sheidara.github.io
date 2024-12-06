@@ -41,7 +41,7 @@ const About = () => {
               >
                 <FaLinkedin />
               </a>
-              <a href="" target="" title="My resume">
+              <a href="files/resume.pdf" target="_blank" title="My resume">
                 <FaFileLines />
               </a>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import ExpandableImage from "../Components/ExpandableImage";
+import ExpandableImage from "../../Components/ExpandableImage";
 
 const Chroma = ({ zoomImage, expandTitle }) => {
   return (

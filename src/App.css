@@ -346,9 +346,9 @@ h1 {
 }
 
 .infoModal h4 {
-  color: #;
-  font-weight: 550;
-  font-size: 19px;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 17px;
   padding-bottom: 0.2em;
 }
 

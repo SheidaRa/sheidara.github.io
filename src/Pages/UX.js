@@ -1,21 +1,19 @@
 import React from "react";
 import UXPortfolioCard from "../Components/UXPortfolioCard";
-import RTR from "../Writings/RTR";
-import HCI from "../Writings/HCI";
-import Chroma from "../Writings/Chroma";
-import Circle from "../Writings/Circle";
-import Tetris from "../Writings/Tetris";
-import GogyUp from "../Writings/GogyUp";
-import GlowGirl from "../Writings/GlowGirl";
-import Portfolio from "../Writings/Portfolio";
+import RTR from "../Writings/UX/RTR";
+import HCI from "../Writings/UX/HCI";
+import Chroma from "../Writings/UX/Chroma";
+import Circle from "../Writings/UX/Circle";
+import Tetris from "../Writings/UX/Tetris";
+import GogyUp from "../Writings/UX/GogyUp";
+import GlowGirl from "../Writings/UX/GlowGirl";
+import Portfolio from "../Writings/UX/Portfolio";
 
 const UX = ({ handleToggleExpansion, zoomImage }) => {
   const expandTitle = "Click to expand";
   return (
     <div className="col-lg-10 offset-lg-1">
-      <div
-        className="row section-wrapper"
-      >
+      <div className="row section-wrapper">
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"Rate This Rental Web Application"}
@@ -84,7 +82,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
             project={"GogyUp Reader Redesign"}
-            tools={["Figama"]}
+            tools={["Figma"]}
             image={"images/projects/gogyup.jpg"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
@@ -112,8 +110,6 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
             }
           />
         </div>
-
-
 
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard

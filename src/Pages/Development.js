@@ -1,90 +1,188 @@
 import React from "react";
 import PortfolioCard from "../Components/PortfolioCard";
+import UXPortfolioCard from "../Components/UXPortfolioCard";
+import RTRDev from "../Writings/Dev/RTRDev";
+import SLG from "../Writings/Dev/SLG";
+import TetrisDev from "../Writings/Dev/TetrisDev";
+import ChromaDev from "../Writings/Dev/ChromaDev";
+import PortfolioDev from "../Writings/Dev/PortfolioDev";
+import Sudoku from "../Writings/Dev/Sudoku";
+import FantasySafe from "../Writings/Dev/FantasySafe";
+import MailBox from "../Writings/Dev/Mailbox";
+import MyPlanner from "../Writings/Dev/MyPlanner";
+import Mailbox from "../Writings/Dev/Mailbox";
 
-const Development = () => {
+const Development = ({ handleToggleExpansion, zoomImage }) => {
+  const expandTitle = "Click to expand";
+  const hovername = " Code and More... ";
   return (
     <div className="col-lg-10 offset-lg-1">
-      <div
-        className="row section-wrapper"
-      >
+      <div className="row row-cols-2 section-wrapper">
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"Sign Language Recognizer"}
             tools={["Python", "Media Pipe"]}
-            link={"https://github.com/SheidaRa/Sign-Language-Recogniser"}
             image={"images/projects/SLR.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                100,
+                "Sign Language Recognizer",
+                <SLG zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/Sign-Language-Recogniser",
+                "Github Repository"
+              );
+            }}
           />
         </div>
 
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"Rate This Rental"}
-            tools={["React", "Ruby", "Bootstrap", "Figma"]}
-            link={"https://github.com/SheidaRa/Rate-This-Rental"}
+            tools={["React", "Ruby", "Bootstrap"]}
             image={"images/projects/RTR.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                101,
+                "Rate This Rental Web Application",
+                <RTRDev zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/Rate-This-Rental",
+                "Github Repository"
+              );
+            }}
           />
         </div>
 
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"Tetris Puzzle App"}
             tools={["Swift", "XCode", "SpriteKit"]}
-            link={"https://github.com/SheidaRa/TetrisGame"}
             image={"images/projects/tetris.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                102,
+                "Tetris Puzzle App",
+                <TetrisDev zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/TetrisGame",
+                "Github Repository"
+              );
+            }}
           />
         </div>
 
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"ChromaVR"}
             tools={["A-Frame", "JavaScript", "HTML"]}
-            link={"https://github.com/SheidaRa/ChromaVR"}
             image={"images/projects/chroma.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                103,
+                "ChromaVR",
+                <ChromaDev zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/ChromaVR",
+                "Github Repository"
+              );
+            }}
           />
         </div>
+
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"Online Portfolio"}
-            tools={["React", "NextJS", "JavaScript"]}
-            link={"https://github.com/SheidaRa/SheidaRa.github.io"}
+            tools={["React", "Javascript", "CSS"]}
             image={"images/projects/portfolio.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                104,
+                "Online Portfolio",
+                <PortfolioDev
+                  zoomImage={zoomImage}
+                  expandTitle={expandTitle}
+                />,
+                "https://github.com/SheidaRa/SheidaRa.github.io",
+                "Github Repository"
+              );
+            }}
           />
         </div>
+
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"Sudoku Solver"}
             tools={["Python", "Backtracking"]}
-            link={"https://github.com/SheidaRa/SudokuPuzzle"}
             image={"images/projects/sudoku.png"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                105,
+                "Sudoku Solver",
+                <Sudoku zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/SudokuPuzzle",
+                "Github Repository"
+              );
+            }}
           />
         </div>
 
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"Fantasy Safe"}
             tools={["Java", "AndroidStudio"]}
-            link={"https://github.com/SheidaRa/Fantasy-Safe"}
             image={"images/projects/fantasySafe.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                106,
+                "Fantasy Safe",
+                <FantasySafe zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/Fantasy-Safe",
+                "Github Repository"
+              );
+            }}
           />
         </div>
 
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"Smart Mailbox"}
             tools={["Python", "RaspberryPi", "IoT"]}
-            link={"https://github.com/SheidaRa/Smart-Mail-Box"}
             image={"images/projects/mailBox.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                107,
+                "Smart Mailbox",
+                <Mailbox zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/Smart-Mail-Box",
+                "Github Repository"
+              );
+            }}
           />
         </div>
 
         <div className="col-lg-5 col-md-6">
-          <PortfolioCard
+          <UXPortfolioCard
             project={"My Planner Application"}
             tools={["Java"]}
-            link={"https://github.com/SheidaRa/MyPlanner"}
             image={"images/projects/planner.png"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                108,
+                "My Planner Application",
+                <MyPlanner zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/MyPlanner",
+                "Github Repository"
+              );
+            }}
           />
         </div>
+
         <div className="col-lg-5 col-md-6"></div>
       </div>
     </div>

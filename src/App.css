@@ -37,6 +37,11 @@ body {
   font-weight: 700;
 }
 
+strong {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
 h1 {
   font-size: 91px;
   font-weight: 700;
@@ -265,10 +270,12 @@ h1 {
   bottom: 0;
   transition: height 0.3s ease-out;
   border-radius: 10px;
-  background: linear-gradient(0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0.7875525210084033) 35%,
-      rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7875525210084033) 35%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
 
 .portfolio-content {
@@ -354,7 +361,8 @@ h1 {
   padding-bottom: 0.2em;
 }
 
-.infoModal .button {}
+.infoModal .button {
+}
 
 .cardContentHeader {
   display: flex;
@@ -466,22 +474,22 @@ iframe {
   flex-direction: column;
 }
 
-.burger>div {
+.burger > div {
   height: 2px;
   background-color: #000;
   transition: 0.5s;
   z-index: 999;
 }
 
-.burger.opened>div:nth-child(1) {
+.burger.opened > div:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-.burger.opened>div:nth-child(2) {
+.burger.opened > div:nth-child(2) {
   opacity: 0;
 }
 
-.burger.opened>div:nth-child(3) {
+.burger.opened > div:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
 

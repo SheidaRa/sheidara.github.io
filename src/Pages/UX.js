@@ -71,7 +71,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
             handleToggleExpansion={() =>
               handleToggleExpansion(
                 3, //unique id
-                "Circle Dating App Design", //project title
+                "Circle Community Buidling App Design", //project title
                 <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
                 "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
               )
@@ -90,22 +90,6 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
                 "GogyUp",
                 <GogyUp zoomImage={zoomImage} expandTitle={expandTitle} />,
                 "https://www.figma.com/community/file/1373182183775895767/gogyup-reader-redesign"
-              )
-            }
-          />
-        </div>
-
-        <div className="col-lg-5 col-md-6">
-          <UXPortfolioCard
-            project={"Circle Dating App Design"}
-            tools={["Figma"]}
-            image={"images/projects/circle.jpg"}
-            handleToggleExpansion={() =>
-              handleToggleExpansion(
-                3, //unique id
-                "Circle Dating App Design", //project title
-                <Circle zoomImage={zoomImage} expandTitle={expandTitle} />, //writing
-                "https://www.figma.com/design/HcGVWdbP4sPslzEpcQPj3f/Dating-App-Design?node-id=0-1&t=7CpMnL8BWQNHKrvg-0" //code link
               )
             }
           />
@@ -141,6 +125,8 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
             }
           />
         </div>
+
+        <div className="col-lg-5 col-md-6"></div>
       </div>
     </div>
   );

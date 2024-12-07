@@ -11,6 +11,8 @@ import FantasySafe from "../Writings/Dev/FantasySafe";
 import MailBox from "../Writings/Dev/Mailbox";
 import MyPlanner from "../Writings/Dev/MyPlanner";
 import Mailbox from "../Writings/Dev/Mailbox";
+import GlowGirlDev from "../Writings/Dev/GlowGirlDev";
+import CircleDev from "../Writings/Dev/CircleDev";
 
 const Development = ({ handleToggleExpansion, zoomImage }) => {
   const expandTitle = "Click to expand";
@@ -178,6 +180,40 @@ const Development = ({ handleToggleExpansion, zoomImage }) => {
                 <MyPlanner zoomImage={zoomImage} expandTitle={expandTitle} />,
                 "https://github.com/SheidaRa/MyPlanner",
                 "Github Repository"
+              );
+            }}
+          />
+        </div>
+
+        <div className="col-lg-5 col-md-6">
+          <UXPortfolioCard
+            project={"Glow Girl"}
+            tools={["React", "CSS", "Bootstrap"]}
+            image={"images/projects/GlowGirl.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                109,
+                "Glow Girl",
+                <GlowGirlDev zoomImage={zoomImage} expandTitle={expandTitle} />,
+                "https://github.com/SheidaRa/HackTGap",
+                "Github Repository"
+              );
+            }}
+          />
+        </div>
+
+        <div className="col-lg-5 col-md-6">
+          <UXPortfolioCard
+            project={"Circle Community Building App"}
+            tools={["React native", "Nativewind", "Firebase"]}
+            image={"images/projects/circle.jpg"}
+            hovername={hovername}
+            handleToggleExpansion={() => {
+              handleToggleExpansion(
+                109,
+                "Circle Community Building App",
+                <CircleDev zoomImage={zoomImage} expandTitle={expandTitle} />
               );
             }}
           />

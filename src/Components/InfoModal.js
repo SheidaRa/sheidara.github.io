@@ -21,9 +21,11 @@ const InfoModal = forwardRef(
       >
         <div className="infoModal">
           <div className="cardContentHeader">
-            <a className="headerLink" href={codeLink} target="_blank">
-              {buttonName}
-            </a>
+            {codeLink && (
+              <a className="headerLink" href={codeLink} target="_blank">
+                {buttonName}
+              </a>
+            )}
             <RxCross2
               onClick={() => setExpandedItem(0)}
               className="closeIcon"

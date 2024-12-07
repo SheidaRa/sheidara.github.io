@@ -1,7 +1,7 @@
 import React from "react";
 import ExpandableImage from "../../Components/ExpandableImage";
 
-const RTRDev = ({ zoomImage, expandTitle }) => {
+const CircleDev = ({ zoomImage, expandTitle }) => {
   return (
     <>
       <h3>Technologies Used</h3>
@@ -47,4 +47,4 @@ const RTRDev = ({ zoomImage, expandTitle }) => {
   );
 };
 
-export default RTRDev;
+export default CircleDev;

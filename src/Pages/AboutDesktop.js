@@ -46,14 +46,17 @@ const About = () => {
               </a>
             </div>
             <p>
-              I am a passionate individual with a strong affinity for
-              development, AI, and UX design, particularly in the domains of
-              accessibility and inclusion. I thrive on creating digital
-              experiences that empower and cater to diverse user needs. With a
-              deep understanding of both technical aspects and user-centric
-              design principles, I strive to bridge the gap between innovation
-              and inclusivity, ensuring that technology is accessible and
-              enriching for all individuals.
+              A self-motivated and passionate computer scientist with a strong
+              focus on AI and Human-Computer Interaction, dedicated to designing
+              technologies that promote accessibility and inclusivity. With
+              extensive research experience in AI and HCI, alongside
+              professional expertise in software development, data analytics,
+              and UX design, I bring a drive for impactful innovation.
+              Recognized with awards for academic and professional excellence, I
+              have presented projects at showcases and developed solutions that
+              bridge technology with societal needs. My ambition is fueled by
+              interdisciplinary exploration and lead efforts in creating
+              human-centered AI tools that deliver meaningful societal impacts.
             </p>
             {/* <a
                         className="button"

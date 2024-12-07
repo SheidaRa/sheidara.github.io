@@ -65,7 +65,7 @@ const UX = ({ handleToggleExpansion, zoomImage }) => {
 
         <div className="col-lg-5 col-md-6">
           <UXPortfolioCard
-            project={"Circle Dating App Design"}
+            project={"Circle Community Building App Design"}
             tools={["Figma"]}
             image={"images/projects/circle.jpg"}
             handleToggleExpansion={() =>

@@ -5,10 +5,11 @@ const WorkCard = ({
   place,
   date,
   image = "images/placeholder.jpg",
+  handleToggleExpansion,
 }) => {
   return (
     <div className="work-card">
-      <div className="work-img">
+      <div className="work-img" onClick={handleToggleExpansion}>
         <img src={image} />
       </div>
       <h2 className="custom-card-title">{experience}</h2>

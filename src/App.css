@@ -138,6 +138,10 @@ h1 {
   color: var(--main-color);
 }
 
+.work-img:hover {
+  cursor: pointer;
+}
+
 .education-img img,
 .work-img img {
   width: 100%;
@@ -367,6 +371,7 @@ h1 {
   padding: 1em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px 15px 0 0;
+  min-height: 82px;
 }
 
 .infoModal-content {
@@ -378,6 +383,8 @@ h1 {
 .closeIcon {
   cursor: pointer;
   font-size: 2em;
+  position: absolute;
+  right: 12px;
 }
 
 .closeIcon-div {

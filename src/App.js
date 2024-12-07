@@ -159,7 +159,10 @@ function App() {
 
           <Carousel.Item>
             <section className="section">
-              <Work />
+              <Work
+                handleToggleExpansion={handleToggleExpansion}
+                zoomImage={zoomImage}
+              />
             </section>
           </Carousel.Item>
 

@@ -10,7 +10,7 @@ const About = () => {
       {/* We use row class to use multiple columns side to side */}
       <div className="row">
         {/* that's the 1st column, the one with the text */}
-        <div className="col-lg-4 offset-lg-2">
+        <div className="col-lg-5 offset-lg-2">
           <div className="presentation">
             {/* <div className="hello">Hello, I am</div> */}
             <h1>Sheida Rashidi</h1>

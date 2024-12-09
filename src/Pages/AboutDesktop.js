@@ -15,9 +15,9 @@ const About = () => {
             {/* <div className="hello">Hello, I am</div> */}
             <h1>Sheida Rashidi</h1>
             <h2>
-              Software Developer
+              {/* Software Developer
               <br />
-              UX Designer
+              UX Designer */}
             </h2>
             <div className="contact-link">
               <a

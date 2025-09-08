@@ -19,9 +19,9 @@ const Work = ({ handleToggleExpansion, zoomImage }) => {
       <div className="row section-wrapper">
         <div className="col-lg-5 col-md-6">
           <WorkCard
-            experience={"Intern"}
+            experience={"Brain-Computer Interaction (BCI) Intern"}
             place={"Blackrock Neurotech, UT"}
-            date={"Starting January 2025"}
+            date={"January 2025 - May 2025"}
             image="https://cdn.prod.website-files.com/601eb8df9b255fadfdab90e5/61a790b92e49a64260054a98_Group%20329.png"
             handleToggleExpansion={() =>
               handleToggleExpansion(
@@ -37,7 +37,7 @@ const Work = ({ handleToggleExpansion, zoomImage }) => {
           <WorkCard
             experience={"Artificial Intelligence Research Assistant"}
             place={"Macalester College, MN"}
-            date={"May 2024 – Present"}
+            date={"May 2024 – Janurary 2025"}
             image={
               "https://img.freepik.com/free-photo/futuristic-ai-technology-microchip-advanced-innovation-digital-remix_53876-124694.jpg?t=st=1733590786~exp=1733594386~hmac=727e81dfad6841c3554f569e88a809862d61bcc82a0121614776a2ded40fb7c0&w=1380"
             }
@@ -71,14 +71,14 @@ const Work = ({ handleToggleExpansion, zoomImage }) => {
 
         <div className="col-lg-5 col-md-6">
           <WorkCard
-            experience={"Software Developer, UX Designer and Marketing Intern"}
+            experience={"Data Analyst, Software Developer, UX Designer"}
             place={"Easy EMDR. MN"}
             date={"June 2023 – August 2023"}
             image={"/images/places/easyemdr.png"}
             handleToggleExpansion={() =>
               handleToggleExpansion(
                 5,
-                "Software Developer, UX Designer, and Marketing Intern",
+                "Data Analyst, Software Developer, UX Designer, and Marketing Intern",
                 <EMDR zoomImage={zoomImage} expandTitle={expandTitle} />
               )
             }
@@ -87,7 +87,7 @@ const Work = ({ handleToggleExpansion, zoomImage }) => {
 
         <div className="col-lg-5 col-md-6">
           <WorkCard
-            experience={"Software Developer and UX Designer Intern"}
+            experience={"Data Analyst, Software Developer and UX Designer Intern"}
             place={"GogyUp Inc. MN "}
             date={"June 2022 - August 2022"}
             image={"images/places/gogyup.png"}

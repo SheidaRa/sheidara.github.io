@@ -240,7 +240,7 @@ h1 {
   justify-content: space-between;
 }
 
-.portfolio-img {
+.portfolio-img, .work-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

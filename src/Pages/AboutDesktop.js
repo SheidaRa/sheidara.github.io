@@ -41,34 +41,41 @@ const About = () => {
               >
                 <FaLinkedin />
               </a>
-              <a href="files/Resume.pdf" target="_blank" title="My resume">
+              {/* <a href="files/Resume.pdf" target="_blank" title="My resume">
                 <FaFileLines />
-              </a>
+              </a> */}
             </div>
             <p>
               A <strong>self-motivated</strong> and{" "}
               <strong>passionate computer scientist</strong> with a strong focus
-              on <strong>AI</strong> and{" "}
-              <strong>Human-Computer Interaction (HCI)</strong>, dedicated to
-              designing technologies that promote <strong>accessibility</strong>{" "}
-              and <strong>inclusivity</strong>. With{" "}
+              on <strong>AI</strong>,{" "}
+              <strong>Human-Computer Interaction (HCI)</strong>, and{" "}
+              <strong>data analytics</strong>, dedicated to designing
+              technologies that promote <strong>accessibility</strong> and{" "}
+              <strong>inclusivity</strong>. With{" "}
               <strong>extensive research experience</strong> in AI and HCI,
               alongside <strong>professional expertise</strong> in{" "}
               <strong>software development</strong>,{" "}
-              <strong>data analytics</strong>, and <strong>UX design</strong>, I
+              <strong>data analysis</strong>, and <strong>UX design</strong>, I
               bring a drive for <strong>impactful innovation</strong>.
             </p>
             <p>
-              Recognized with <strong>awards</strong> for{" "}
-              <strong>academic</strong> and{" "}
+              Certified in <strong>Google UX Design</strong>,{" "}
+              <strong>Google Data Analytics</strong>, and{" "}
+              <strong>IBM Data Analytics</strong>, I combine{" "}
+              <strong>technical expertise</strong> with{" "}
+              <strong>user-centered approaches</strong> to create solutions that
+              are both <strong>data-driven</strong> and{" "}
+              <strong>human-focused</strong>. Recognized with{" "}
+              <strong>awards</strong> for <strong>academic</strong> and{" "}
               <strong>professional excellence</strong>, I have presented
               projects at showcases and developed solutions that bridge{" "}
               <strong>technology</strong> with <strong>societal needs</strong>.
               My ambition is fueled by{" "}
               <strong>interdisciplinary exploration</strong> and a commitment to
               leading efforts in creating{" "}
-              <strong>human-centered AI tools</strong> that deliver{" "}
-              <strong>meaningful societal impacts</strong>.
+              <strong>human-centered AI and data-driven tools</strong> that
+              deliver <strong>meaningful societal impacts</strong>.
             </p>
 
             {/* <a

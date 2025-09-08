@@ -143,10 +143,6 @@ h1 {
   color: var(--main-color);
 }
 
-.work-img:hover {
-  cursor: pointer;
-}
-
 .education-img img,
 .work-img img {
   width: 100%;
@@ -250,11 +246,14 @@ h1 {
   background-position: center;
   height: 277px;
   border-radius: 10px;
-  cursor: pointer;
   position: relative;
   display: flex;
   align-items: end;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-img {
+  cursor: pointer;
 }
 
 .dev-card .portfolio-img {

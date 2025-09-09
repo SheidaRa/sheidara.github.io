@@ -5,6 +5,16 @@ const Work = () => {
   return (
     <div className="col-lg-10 offset-lg-1">
       <div className="row section-wrapper">
+
+        <div className="col-lg-5 col-md-6">
+          <WorkCard
+            experience={"Intern"}
+            place={"Gaston LLC, AZ"}
+            date={"May 2025 - Present"}
+            image="https://img.freepik.com/vecteurs-libre/femme-affaires-multitache-dessinee-main-illustree_23-2148818039.jpg?semt=ais_hybrid&w=740&q=80"
+          />
+        </div>
+
         <div className="col-lg-5 col-md-6">
           <WorkCard
             experience={"Brain-Computer Interaction (BCI) Intern"}
